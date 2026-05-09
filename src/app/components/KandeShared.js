@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export const inventoryVehicles = [
   ["2024", "GMC Sierra 1500 Sport Edition", "33,814 miles · 6.2-Liter V8 · Automatic", "$36,900", "/info-pages/inventory-01.jpg"],
   ["2017", "Ford F-150 Raptor Hennessey VelociRaptor 600", "82,114 miles · 3.5-Liter V6 · Automatic", "$38,000", "/info-pages/inventory-02.jpg"],
@@ -21,29 +19,6 @@ export function ArrowIcon() {
       <line x1="5" y1="12" x2="19" y2="12" />
       <polyline points="12 5 19 12 12 19" />
     </svg>
-  );
-}
-
-export function SiteNav() {
-  return (
-    <nav className="navbar">
-      <div className="nav-container">
-        <div className="nav-left">
-          <Link href="/" className="nav-link">Home</Link>
-          <a href="/inventory" className="nav-link">Inventory</a>
-          <a href="/about" className="nav-link">About</a>
-        </div>
-        <Link href="/" className="logo" aria-label="K&E Auto Inc home">
-          <img src="/homepage/logo.png" alt="K&E Auto Inc" className="logo-image" />
-        </Link>
-        <div className="nav-right">
-          <a href="/shipping" className="nav-link">Shipping</a>
-          <a href="/sell" className="nav-link">Sell</a>
-          <a href="/contact" className="nav-link">Contact</a>
-          <a href="tel:2185050788" className="nav-link nav-cta">218-505-0788</a>
-        </div>
-      </div>
-    </nav>
   );
 }
 
@@ -82,53 +57,5 @@ export function VehicleCard({ vehicle }) {
         </div>
       </div>
     </article>
-  );
-}
-
-export function SiteFooter() {
-  return (
-    <footer>
-      <div className="footer-content">
-        <div className="footer-grid">
-          <div className="footer-brand">
-            <Link href="/" className="footer-logo">
-              <img src="/homepage/footer-logo.png" alt="K&E Auto Inc" className="footer-logo-image" />
-            </Link>
-          </div>
-          <div className="footer-column">
-            <h4>Explore</h4>
-            <ul className="footer-links">
-              <li><Link href="/">Home</Link></li>
-              <li><a href="/inventory">Inventory</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/shipping">Shipping</a></li>
-              <li><a href="/sell">Sell Your Car</a></li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h4>Support</h4>
-            <ul className="footer-links">
-              <li><a href="/contact">Contact Us</a></li>
-              <li><a href="/shipping#faq">Shipping FAQ</a></li>
-              <li><a href="/privacy">Privacy Policy</a></li>
-              <li><a href="/terms">Terms of Service</a></li>
-            </ul>
-          </div>
-          <div className="footer-column">
-            <h4>Contact</h4>
-            <div className="footer-contact-item">Norway Pines Pl<br />Hermantown, MN 55811</div>
-            <div className="footer-contact-item"><a href="tel:2185050788">218-505-0788</a></div>
-            <div className="footer-contact-item"><a href="mailto:sales@kandeautosales.com">sales@kandeautosales.com</a></div>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <div className="footer-legal">
-            <a href="/privacy">Privacy</a>
-            <a href="/terms">Terms</a>
-          </div>
-          <p className="footer-copyright">© 2026 K&E Auto Inc. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
   );
 }

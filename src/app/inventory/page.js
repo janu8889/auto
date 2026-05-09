@@ -1,9 +1,8 @@
-import { inventoryVehicles, PageHeader, SiteFooter, SiteNav, VehicleCard } from "../components/KandeShared";
+import { inventoryVehicles, PageHeader, VehicleCard } from "../components/KandeShared";
 
 export default function InventoryPage() {
   return (
     <div className="homepage">
-      <SiteNav />
       <main>
         <PageHeader
           tag="Inventory"
@@ -28,7 +27,6 @@ export default function InventoryPage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }

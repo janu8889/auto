@@ -1,9 +1,8 @@
-import { PageHeader, SiteFooter, SiteNav } from "../components/KandeShared";
+import { PageHeader } from "../components/KandeShared";
 
 export default function PrivacyPage() {
   return (
     <div className="homepage">
-      <SiteNav />
       <main>
         <PageHeader tag="Home / Privacy Policy" title="Privacy Policy" subtitle="Last Updated: May 3, 2026" />
         <section>
@@ -23,7 +22,6 @@ export default function PrivacyPage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }

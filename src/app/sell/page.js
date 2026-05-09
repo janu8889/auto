@@ -1,9 +1,8 @@
-import { PageHeader, SiteFooter, SiteNav } from "../components/KandeShared";
+import { PageHeader } from "../components/KandeShared";
 
 export default function SellPage() {
   return (
     <div className="homepage">
-      <SiteNav />
       <main>
         <PageHeader tag="Partner With Us" title="Sell Your Vehicle" subtitle="Reach qualified buyers through our trusted platform" />
 
@@ -50,7 +49,6 @@ export default function SellPage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }

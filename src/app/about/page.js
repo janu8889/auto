@@ -1,4 +1,4 @@
-import { PageHeader, SiteFooter, SiteNav } from "../components/KandeShared";
+import { PageHeader } from "../components/KandeShared";
 
 const principles = [
   ["Integrity", "Complete transparency in every vehicle, conversation, and transaction."],
@@ -9,7 +9,6 @@ const principles = [
 export default function AboutPage() {
   return (
     <div className="homepage">
-      <SiteNav />
       <main>
         <PageHeader tag="Est. 2008" title="Our Story" subtitle="A legacy built on passion, integrity, and excellence" />
 
@@ -55,7 +54,6 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }

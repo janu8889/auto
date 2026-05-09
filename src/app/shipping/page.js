@@ -1,4 +1,4 @@
-import { PageHeader, SiteFooter, SiteNav } from "../components/KandeShared";
+import { PageHeader } from "../components/KandeShared";
 
 const options = [
   ["Enclosed Transport", "Premium protection for your vehicle", ["Full weather protection", "$500K+ insurance coverage", "GPS tracking included", "Soft-tie down system"], "Starting at $1.00/mile"],
@@ -9,7 +9,6 @@ const options = [
 export default function ShippingPage() {
   return (
     <div className="homepage">
-      <SiteNav />
       <main>
         <PageHeader tag="Nationwide Delivery" title="White-Glove Transport" subtitle="Professional enclosed shipping to all 50 states" />
 
@@ -52,7 +51,6 @@ export default function ShippingPage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }

@@ -1,4 +1,4 @@
-import { ArrowIcon, SiteFooter, SiteNav } from "../../components/KandeShared";
+import { ArrowIcon } from "../../components/KandeShared";
 
 const specs = [
   ["Mileage", "15,803 mi"],
@@ -14,7 +14,6 @@ const thumbs = Array.from({ length: 6 }, (_, index) => `/info-pages/2023-ford-f-
 export default function VehicleDetailPage() {
   return (
     <div className="homepage">
-      <SiteNav />
       <main>
         <header className="page-header detail-header">
           <div className="container">
@@ -71,7 +70,6 @@ export default function VehicleDetailPage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }

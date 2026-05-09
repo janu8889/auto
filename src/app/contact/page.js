@@ -1,9 +1,8 @@
-import { PageHeader, SiteFooter, SiteNav } from "../components/KandeShared";
+import { PageHeader } from "../components/KandeShared";
 
 export default function ContactPage() {
   return (
     <div className="homepage">
-      <SiteNav />
       <main>
         <PageHeader tag="Call Us Directly 218-505-0788" title="Get In Touch" subtitle="Whether you have a question about a vehicle or need assistance, our team is here to help" />
 
@@ -35,7 +34,6 @@ export default function ContactPage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }

@@ -63,28 +63,6 @@ function StarIcon() {
 export default function Home() {
   return (
     <div className="homepage">
-      <nav className="navbar" id="navbar">
-        <div className="nav-container">
-          <div className="nav-left">
-            <a href="#" className="nav-link active">Home</a>
-            <a href="#inventory" className="nav-link">Inventory</a>
-            <a href="#story" className="nav-link">About</a>
-          </div>
-
-          <a href="#" className="logo" aria-label="K&E Auto Inc home">
-            <img src="/homepage/logo.png" alt="K&E Auto Inc" className="logo-image" />
-          </a>
-
-          <div className="nav-right">
-            <a href="#shipping" className="nav-link">Shipping</a>
-            <a href="#contact" className="nav-link">Contact</a>
-            <a href="tel:2185050788" className="nav-link nav-cta">
-              Call 218-505-0788
-            </a>
-          </div>
-        </div>
-      </nav>
-
       <main>
         <section className="hero">
           <div className="hero-bg" />
@@ -295,54 +273,6 @@ export default function Home() {
         </section>
       </main>
 
-      <footer>
-        <div className="footer-content">
-          <div className="footer-grid">
-            <div className="footer-brand">
-              <a href="#" className="footer-logo">
-                <img src="/homepage/footer-logo.png" alt="K&E Auto Inc" className="footer-logo-image" />
-              </a>
-            </div>
-            <div className="footer-column">
-              <h4>Explore</h4>
-              <ul className="footer-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#inventory">Inventory</a></li>
-                <li><a href="#story">About Us</a></li>
-                <li><a href="#shipping">Shipping</a></li>
-              </ul>
-            </div>
-            <div className="footer-column">
-              <h4>Support</h4>
-              <ul className="footer-links">
-                <li><a href="#contact">Contact Us</a></li>
-                <li><a href="#shipping">Shipping FAQ</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Terms of Service</a></li>
-              </ul>
-            </div>
-            <div className="footer-column">
-              <h4>Contact</h4>
-              <div className="footer-contact-item">
-                <span>Norway Pines Pl<br />Hermantown, MN 55811</span>
-              </div>
-              <div className="footer-contact-item">
-                <a href="tel:2185050788">218-505-0788</a>
-              </div>
-              <div className="footer-contact-item">
-                <a href="mailto:sales@kandeautosales.com">sales@kandeautosales.com</a>
-              </div>
-            </div>
-          </div>
-          <div className="footer-bottom">
-            <div className="footer-legal">
-              <a href="#">Privacy</a>
-              <a href="#">Terms</a>
-            </div>
-            <p className="footer-copyright">© 2026 K&E Auto Inc. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
     </div>
   );
 }

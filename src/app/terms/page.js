@@ -1,9 +1,8 @@
-import { PageHeader, SiteFooter, SiteNav } from "../components/KandeShared";
+import { PageHeader } from "../components/KandeShared";
 
 export default function TermsPage() {
   return (
     <div className="homepage">
-      <SiteNav />
       <main>
         <PageHeader tag="Home / Terms and Conditions" title="Terms and Conditions" subtitle="Last Updated: May 3, 2026" />
         <section>
@@ -23,7 +22,6 @@ export default function TermsPage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }

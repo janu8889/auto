@@ -1,9 +1,6 @@
-import { SiteFooter, SiteNav } from "../components/KandeShared";
-
 export default function PurchasePage() {
   return (
     <div className="homepage">
-      <SiteNav />
       <main>
         <header className="page-header detail-header">
           <div className="container">
@@ -46,7 +43,6 @@ export default function PurchasePage() {
           </div>
         </section>
       </main>
-      <SiteFooter />
     </div>
   );
 }
