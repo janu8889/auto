@@ -1,20 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import "./about.css";
 
-import logoAsset from "./assets/logo.png";
-
-const navLeft = [
-  { label: "Home", href: "https://kandeautosales.com/" },
-  { label: "Inventory", href: "https://kandeautosales.com/inventory.php" },
-  { label: "About", href: "https://kandeautosales.com/about.php", active: true },
-];
-
-const navRight = [
-  { label: "Shipping", href: "https://kandeautosales.com/shipping.php" },
-  { label: "Sell", href: "https://kandeautosales.com/sell.php" },
-  { label: "Contact", href: "https://kandeautosales.com/contact.php" },
-];
-
 const values = [
   {
     title: "Integrity",
@@ -43,21 +29,6 @@ const stats = [
   ["100%", "Satisfaction Focus"],
 ];
 
-const footerExplore = [
-  ["Home", "https://kandeautosales.com/"],
-  ["Inventory", "https://kandeautosales.com/inventory.php"],
-  ["About Us", "https://kandeautosales.com/about.php"],
-  ["Shipping", "https://kandeautosales.com/shipping.php"],
-  ["Sell Your Car", "https://kandeautosales.com/sell.php"],
-];
-
-const footerSupport = [
-  ["Contact Us", "https://kandeautosales.com/contact.php"],
-  ["Shipping FAQ", "https://kandeautosales.com/shipping.php#faq"],
-  ["Privacy Policy", "https://kandeautosales.com/privacy.php"],
-  ["Terms of Service", "https://kandeautosales.com/terms.php"],
-];
-
 function PhoneIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
@@ -66,14 +37,6 @@ function PhoneIcon(props) {
   );
 }
 
-function MailIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-      <polyline points="22,6 12,13 2,6" />
-    </svg>
-  );
-}
 
 function LocationIcon(props) {
   return (
@@ -129,52 +92,6 @@ function ValueIcon({ type }) {
     <svg viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" strokeWidth="2" style={style}>
       <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
     </svg>
-  );
-}
-
-function Header() {
-  return (
-    <>
-      <nav className="navbar scrolled" id="navbar" itemScope itemType="https://schema.org/SiteNavigationElement">
-        <div className="nav-container">
-          <div className="nav-left">
-            {navLeft.map((item) => (
-              <a key={item.label} href={item.href} className={item.active ? "nav-link active" : "nav-link"} itemProp="url">
-                {item.label}
-              </a>
-            ))}
-          </div>
-
-          <a href="https://kandeautosales.com/" className="logo" itemProp="url">
-            <img
-              src={logoAsset.src}
-              alt="K&E Auto Inc"
-              className="logo-image"
-              style={{
-                "--desktop-logo-height": "100px",
-                "--mobile-logo-height": "90px",
-                height: "var(--desktop-logo-height)",
-              }}
-            />
-          </a>
-
-          <div className="nav-right">
-            {navRight.map((item) => (
-              <a key={item.label} href={item.href} className="nav-link" itemProp="url">
-                {item.label}
-              </a>
-            ))}
-            <a href="tel:2185050788" className="nav-cta" aria-label="Call 218-505-0788">
-              <PhoneIcon />
-              218-505-0788
-            </a>
-          </div>
-
-          <button className="mobile-menu-btn sf-hidden" id="mobileMenuBtn" aria-label="Toggle menu" type="button" />
-        </div>
-      </nav>
-      <div className="mobile-nav sf-hidden" id="mobileNav" role="navigation" aria-label="Mobile navigation" />
-    </>
   );
 }
 
@@ -407,78 +324,10 @@ function CtaSection() {
   );
 }
 
-function Footer() {
-  return (
-    <footer itemScope itemType="https://schema.org/WPFooter">
-      <div className="footer-content">
-        <div className="footer-grid">
-          <div className="footer-brand">
-            <a href="https://kandeautosales.com/" className="footer-logo">
-              <img src={logoAsset.src} alt="K&E Auto Inc" className="footer-logo-image" style={{ height: 150 }} />
-            </a>
-            <p />
-            <div className="footer-social" />
-          </div>
-
-          <div className="footer-column">
-            <h4>Explore</h4>
-            <ul className="footer-links">
-              {footerExplore.map(([label, href]) => (
-                <li key={label}>
-                  <a href={href}>{label}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer-column">
-            <h4>Support</h4>
-            <ul className="footer-links">
-              {footerSupport.map(([label, href]) => (
-                <li key={label}>
-                  <a href={href}>{label}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer-column">
-            <h4>Contact</h4>
-            <div className="footer-contact-item">
-              <LocationIcon />
-              <span>
-                Norway Pines Pl
-                <br />
-                Hermantown, MN 55811
-              </span>
-            </div>
-            <div className="footer-contact-item">
-              <PhoneIcon />
-              <a href="tel:2185050788">218-505-0788</a>
-            </div>
-            <div className="footer-contact-item">
-              <MailIcon />
-              <a href="mailto:sales@kandeautosales.com">sales@kandeautosales.com</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="footer-bottom">
-          <div className="footer-legal">
-            <a href="https://kandeautosales.com/privacy.php">Privacy</a>
-            <a href="https://kandeautosales.com/terms.php">Terms</a>
-          </div>
-          <p className="footer-copyright">© 2026 K&E Auto Inc. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-  );
-}
 
 export default function AboutPage() {
   return (
     <>
-      <Header />
       <main role="main">
         <Hero />
         <BeginningSection />
@@ -487,12 +336,6 @@ export default function AboutPage() {
         <ContactSection />
         <CtaSection />
       </main>
-      <Footer />
-      <button className="back-to-top" id="backToTop" aria-label="Back to top" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <polyline points="18 15 12 9 6 15" />
-        </svg>
-      </button>
     </>
   );
 }
