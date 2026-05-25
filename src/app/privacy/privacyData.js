@@ -4,7 +4,7 @@ const privacySections = [
     "blocks": [
       {
         "type": "p",
-        "text": "K&E Auto Inc (\"we,\" \"our,\" or \"us\") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, contact us, or use our services."
+        "text": "Kash Automotive Group LLC (\"we,\" \"our,\" or \"us\") respects your privacy and is committed to protecting your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website, contact us, or use our services."
       },
       {
         "type": "p",
@@ -106,7 +106,7 @@ const privacySections = [
         "items": [
           {
             "strong": "Phone calls",
-            "text": "from K&E Auto Inc at 218-505-0788 regarding your inquiry and related vehicle information"
+            "text": "from Kash Automotive Group LLC at 218-505-0788 regarding your inquiry and related vehicle information"
           },
           {
             "strong": "SMS/Text messages",

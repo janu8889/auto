@@ -4,7 +4,7 @@ const legalSections = [
     "blocks": [
       {
         "type": "p",
-        "text": "Welcome to K&E Auto Inc. These Terms and Conditions (\"Terms\") govern your access to and use of our website, services, and any related communications. By accessing our website or using our services, you agree to be bound by these Terms."
+        "text": "Welcome to Kash Automotive Group LLC. These Terms and Conditions (\"Terms\") govern your access to and use of our website, services, and any related communications. By accessing our website or using our services, you agree to be bound by these Terms."
       },
       {
         "type": "p",
@@ -17,7 +17,7 @@ const legalSections = [
     "blocks": [
       {
         "type": "p",
-        "text": "K&E Auto Inc operates as a premium automobile dealership. Our services include:"
+        "text": "Kash Automotive Group LLC operates as a premium automobile dealership. Our services include:"
       },
       {
         "type": "ul",
@@ -127,14 +127,14 @@ const legalSections = [
     "blocks": [
       {
         "type": "p",
-        "text": "By submitting an inquiry form or providing your contact information, you expressly consent to receive communications from K&E Auto Inc, including:"
+        "text": "By submitting an inquiry form or providing your contact information, you expressly consent to receive communications from Kash Automotive Group LLC, including:"
       },
       {
         "type": "ul",
         "items": [
           {
             "strong": "Phone Calls:",
-            "text": "You consent to receive telephone calls, including calls made using an automatic telephone dialing system, at the phone number you provided, from K&E Auto Inc at 218-505-0788."
+            "text": "You consent to receive telephone calls, including calls made using an automatic telephone dialing system, at the phone number you provided, from Kash Automotive Group LLC at 218-505-0788."
           },
           {
             "strong": "Text Messages (SMS):",
@@ -239,7 +239,7 @@ const legalSections = [
     "blocks": [
       {
         "type": "p",
-        "text": "All content on this website, including text, images, graphics, logos, and software, is the property of K&E Auto Inc or its licensors and is protected by intellectual property laws. You may not use, reproduce, or distribute any content without our written permission."
+        "text": "All content on this website, including text, images, graphics, logos, and software, is the property of Kash Automotive Group LLC or its licensors and is protected by intellectual property laws. You may not use, reproduce, or distribute any content without our written permission."
       }
     ]
   },
@@ -257,7 +257,7 @@ const legalSections = [
     "blocks": [
       {
         "type": "p",
-        "text": "TO THE MAXIMUM EXTENT PERMITTED BY LAW, K&E AUTO INC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE WEBSITE OR SERVICES."
+        "text": "TO THE MAXIMUM EXTENT PERMITTED BY LAW, Kash Automotive Group LLC SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM YOUR USE OF THE WEBSITE OR SERVICES."
       }
     ]
   },
@@ -266,7 +266,7 @@ const legalSections = [
     "blocks": [
       {
         "type": "p",
-        "text": "You agree to indemnify and hold harmless K&E Auto Inc, its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from your use of the website or violation of these Terms."
+        "text": "You agree to indemnify and hold harmless Kash Automotive Group LLC, its officers, directors, employees, and agents from any claims, damages, losses, or expenses arising from your use of the website or violation of these Terms."
       }
     ]
   },
@@ -275,7 +275,7 @@ const legalSections = [
     "blocks": [
       {
         "type": "p",
-        "text": "These Terms shall be governed by and construed in accordance with the laws of the State of Florida, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be resolved in the courts of Orange County, Florida."
+        "text": "These Terms shall be governed by and construed in accordance with the laws of the State of Atlanta, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be resolved in the courts of Atlanta."
       }
     ]
   },
@@ -284,7 +284,7 @@ const legalSections = [
     "blocks": [
       {
         "type": "p",
-        "text": "Any dispute or claim relating to these Terms or your use of our services shall first be attempted to be resolved through good-faith negotiation. If negotiation fails, the parties agree to submit to binding arbitration in Orange County, Florida."
+        "text": "Any dispute or claim relating to these Terms or your use of our services shall first be attempted to be resolved through good-faith negotiation. If negotiation fails, the parties agree to submit to binding arbitration in Atlanta."
       }
     ]
   },
