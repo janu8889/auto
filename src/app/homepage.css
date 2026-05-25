@@ -436,7 +436,7 @@ img {
 .hero-bg {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(24, 24, 27, 0.7) 0%, rgba(24, 24, 27, 0.85) 100%), url("./homepage-assets/hero-bg.png") center/cover no-repeat;
+    background: linear-gradient(180deg, rgba(24, 24, 27, 0.7) 0%, rgba(24, 24, 27, 0.85) 100%), url("./homepage-assets/hero-bg.jpg") center/cover no-repeat;
     transform: scale(1.05);
     animation: heroZoom 20s ease-in-out infinite alternate
 }

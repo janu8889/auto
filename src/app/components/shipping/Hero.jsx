@@ -2,7 +2,7 @@
 
 function Hero() {
   return (
-    <div className="page-header">
+    <div className="page-header-shipping">
       <span className="hero-tag" style={{ animation: "fadeUp 0.6s ease both" }}>
         Nationwide Delivery
       </span>
