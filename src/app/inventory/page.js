@@ -1,10 +1,11 @@
 "use client";
 
 /* eslint-disable @next/next/no-img-element */
+import InventoryGrid from "../components/inventory/InventoryGrid";
+
 import { useMemo, useState } from "react";
 import "./inventory.css";
 
-import logoAsset from "./assets/logo.png";
 import vehicle01 from "./assets/vehicle-01.jpg";
 import vehicle02 from "./assets/vehicle-02.jpg";
 import vehicle03 from "./assets/vehicle-03.jpg";
@@ -34,18 +35,6 @@ import vehicle26 from "./assets/vehicle-26.jpg";
 import vehicle27 from "./assets/vehicle-27.jpg";
 import vehicle28 from "./assets/vehicle-28.jpg";
 import vehicle29 from "./assets/vehicle-29.jpg";
-
-const navLeft = [
-  { label: "Home", href: "https://kandeautosales.com/" },
-  { label: "Inventory", href: "https://kandeautosales.com/inventory.php", active: true },
-  { label: "About", href: "https://kandeautosales.com/about.php" },
-];
-
-const navRight = [
-  { label: "Shipping", href: "https://kandeautosales.com/shipping.php" },
-  { label: "Sell", href: "https://kandeautosales.com/sell.php" },
-  { label: "Contact", href: "https://kandeautosales.com/contact.php" },
-];
 
 const makeOptions = ["Chevrolet", "Dodge", "Ford", "GMC", "Lexus", "Mercedes-Benz", "Ram", "Winnebago"];
 const yearOptions = ["2026", "2025", "2024", "2023", "2022", "2021", "2020", "2019", "2018", "2017"];
@@ -470,190 +459,6 @@ const vehicles = [
   }
 ];
 
-const footerExplore = [
-  ["Home", "https://kandeautosales.com/"],
-  ["Inventory", "https://kandeautosales.com/inventory.php"],
-  ["About Us", "https://kandeautosales.com/about.php"],
-  ["Shipping", "https://kandeautosales.com/shipping.php"],
-  ["Sell Your Car", "https://kandeautosales.com/sell.php"],
-];
-
-const footerSupport = [
-  ["Contact Us", "https://kandeautosales.com/contact.php"],
-  ["Shipping FAQ", "https://kandeautosales.com/shipping.php#faq"],
-  ["Privacy Policy", "https://kandeautosales.com/privacy.php"],
-  ["Terms of Service", "https://kandeautosales.com/terms.php"],
-];
-
-function PhoneIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z" />
-    </svg>
-  );
-}
-
-function MailIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-      <polyline points="22,6 12,13 2,6" />
-    </svg>
-  );
-}
-
-function LocationIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
-      <circle cx="12" cy="10" r="3" />
-    </svg>
-  );
-}
-
-function ArrowRightIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-      <line x1="5" y1="12" x2="19" y2="12" />
-      <polyline points="12 5 19 12 12 19" />
-    </svg>
-  );
-}
-
-function SearchIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-      <circle cx="11" cy="11" r="8" />
-      <line x1="21" y1="21" x2="16.65" y2="16.65" />
-    </svg>
-  );
-}
-
-function Header() {
-  return (
-    <>
-      <nav className="navbar scrolled" id="navbar" itemScope itemType="https://schema.org/SiteNavigationElement">
-        <div className="nav-container">
-          <div className="nav-left">
-            {navLeft.map((item) => (
-              <a key={item.label} href={item.href} className={item.active ? "nav-link active" : "nav-link"} itemProp="url">
-                {item.label}
-              </a>
-            ))}
-          </div>
-
-          <a href="https://kandeautosales.com/" className="logo" itemProp="url">
-            <img
-              src={logoAsset.src}
-              alt="K&E Auto Inc"
-              className="logo-image"
-              style={{
-                "--desktop-logo-height": "100px",
-                "--mobile-logo-height": "90px",
-                height: "var(--desktop-logo-height)",
-              }}
-            />
-          </a>
-
-          <div className="nav-right">
-            {navRight.map((item) => (
-              <a key={item.label} href={item.href} className="nav-link" itemProp="url">
-                {item.label}
-              </a>
-            ))}
-            <a href="tel:2185050788" className="nav-cta" aria-label="Call 218-505-0788">
-              <PhoneIcon />
-              218-505-0788
-            </a>
-          </div>
-
-          <button className="mobile-menu-btn sf-hidden" id="mobileMenuBtn" aria-label="Toggle menu" type="button" />
-        </div>
-      </nav>
-      <div className="mobile-nav sf-hidden" id="mobileNav" role="navigation" aria-label="Mobile navigation" />
-    </>
-  );
-}
-
-function FilterBar({ search, make, year, sort, onSearchChange, onMakeChange, onYearChange, onSortChange }) {
-  return (
-    <div className="filter-bar reveal revealed">
-      <div className="search-input-wrapper">
-        <SearchIcon />
-        <input
-          type="text"
-          id="searchInput"
-          placeholder="Search by make, model, year..."
-          autoComplete="off"
-          value={search}
-          onChange={(event) => onSearchChange(event.target.value)}
-        />
-      </div>
-
-      <div className="form-group" style={{ margin: 0, minWidth: 160 }}>
-        <select id="makeFilter" value={make} onChange={(event) => onMakeChange(event.target.value)}>
-          <option value="">All Makes</option>
-          {makeOptions.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      <div className="form-group" style={{ margin: 0, minWidth: 130 }}>
-        <select id="yearFilter" value={year} onChange={(event) => onYearChange(event.target.value)}>
-          <option value="">All Years</option>
-          {yearOptions.map((option) => (
-            <option key={option} value={option}>
-              {option}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      <div className="form-group" style={{ margin: 0, minWidth: 140 }}>
-        <select id="sortFilter" value={sort} onChange={(event) => onSortChange(event.target.value)}>
-          {sortOptions.map(([value, label]) => (
-            <option key={value} value={value}>
-              {label}
-            </option>
-          ))}
-        </select>
-      </div>
-    </div>
-  );
-}
-
-function VehicleCard({ vehicle }) {
-  const image = vehicleImages[vehicle.imageIndex];
-
-  return (
-    <a
-      href={vehicle.href}
-      className="vehicle-card"
-      data-make={vehicle.make}
-      data-year={vehicle.year}
-      data-price={vehicle.price}
-      data-search={vehicle.search}
-    >
-      <div className="vehicle-card-image">
-        <img src={image.src} alt={vehicle.alt} loading="lazy" />
-      </div>
-      <div className="vehicle-card-body">
-        <p className="vehicle-year">{vehicle.yearText}</p>
-        <h3 className="vehicle-title">{vehicle.title}</h3>
-        <p className="vehicle-specs">{vehicle.specs}</p>
-        <div className="vehicle-card-footer">
-          <p className="vehicle-price">{vehicle.priceText}</p>
-          <span className="vehicle-card-btn">
-            <ArrowRightIcon />
-          </span>
-        </div>
-      </div>
-    </a>
-  );
-}
 
 function sortVehicles(list, sort) {
   const next = [...list];
@@ -667,128 +472,10 @@ function sortVehicles(list, sort) {
   return next;
 }
 
-function InventoryGrid() {
-  const [search, setSearch] = useState("");
-  const [make, setMake] = useState("");
-  const [year, setYear] = useState("");
-  const [sort, setSort] = useState("newest");
-
-  const visibleVehicles = useMemo(() => {
-    const query = search.trim().toLowerCase();
-    const filtered = vehicles.filter((vehicle) => {
-      const matchesSearch = !query || vehicle.search.toLowerCase().includes(query) || vehicle.title.toLowerCase().includes(query);
-      const matchesMake = !make || vehicle.make === make;
-      const matchesYear = !year || String(vehicle.year) === year;
-      return matchesSearch && matchesMake && matchesYear;
-    });
-
-    return sortVehicles(filtered, sort);
-  }, [make, search, sort, year]);
-
-  return (
-    <section className="inventory-section">
-      <div className="inventory-container">
-        <FilterBar
-          search={search}
-          make={make}
-          year={year}
-          sort={sort}
-          onSearchChange={setSearch}
-          onMakeChange={setMake}
-          onYearChange={setYear}
-          onSortChange={setSort}
-        />
-
-        <div className="inventory-grid" id="vehicleGrid">
-          {visibleVehicles.map((vehicle) => (
-            <VehicleCard key={vehicle.href} vehicle={vehicle} />
-          ))}
-        </div>
-
-        <div className="inventory-empty" id="emptyState" style={{ display: visibleVehicles.length ? "none" : "block", textAlign: "center", padding: "4rem 2rem" }}>
-          <SearchIcon style={{ width: 64, height: 64, marginBottom: "1.5rem" }} />
-        </div>
-
-        <p className="inventory-count" id="resultsCount">
-          Showing <span id="visibleCount">{visibleVehicles.length}</span> of {vehicles.length} vehicles
-        </p>
-      </div>
-    </section>
-  );
-}
-
-function Footer() {
-  return (
-    <footer itemScope itemType="https://schema.org/WPFooter">
-      <div className="footer-content">
-        <div className="footer-grid">
-          <div className="footer-brand">
-            <a href="https://kandeautosales.com/" className="footer-logo">
-              <img src={logoAsset.src} alt="K&E Auto Inc" className="footer-logo-image" style={{ height: 150 }} />
-            </a>
-            <p />
-            <div className="footer-social" />
-          </div>
-
-          <div className="footer-column">
-            <h4>Explore</h4>
-            <ul className="footer-links">
-              {footerExplore.map(([label, href]) => (
-                <li key={label}>
-                  <a href={href}>{label}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer-column">
-            <h4>Support</h4>
-            <ul className="footer-links">
-              {footerSupport.map(([label, href]) => (
-                <li key={label}>
-                  <a href={href}>{label}</a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer-column">
-            <h4>Contact</h4>
-            <div className="footer-contact-item">
-              <LocationIcon />
-              <span>
-                Norway Pines Pl
-                <br />
-                Hermantown, MN 55811
-              </span>
-            </div>
-            <div className="footer-contact-item">
-              <PhoneIcon />
-              <a href="tel:2185050788">218-505-0788</a>
-            </div>
-            <div className="footer-contact-item">
-              <MailIcon />
-              <a href="mailto:sales@kandeautosales.com">sales@kandeautosales.com</a>
-            </div>
-          </div>
-        </div>
-
-        <div className="footer-bottom">
-          <div className="footer-legal">
-            <a href="https://kandeautosales.com/privacy.php">Privacy</a>
-            <a href="https://kandeautosales.com/terms.php">Terms</a>
-          </div>
-          <p className="footer-copyright">© 2026 K&E Auto Inc. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-  );
-}
 
 export default function InventoryPage() {
   return (
     <>
-      <Header />
       <main role="main">
         <div className="page-header">
           <span className="hero-tag" style={{ animation: "fadeUp 0.6s ease both" }}>
@@ -797,14 +484,15 @@ export default function InventoryPage() {
           <h1>Featured Vehicles</h1>
           <p>{"Find the right vehicle for your needs"}</p>
         </div>
-        <InventoryGrid />
+        <InventoryGrid  
+          sortVehicles={sortVehicles}
+          vehicleImages={vehicleImages}
+          vehicles={vehicles}
+          sortOptions={sortOptions}
+          yearOptions={yearOptions}
+          makeOptions={makeOptions}
+        />
       </main>
-      <Footer />
-      <button className="back-to-top" id="backToTop" aria-label="Back to top" type="button">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <polyline points="18 15 12 9 6 15" />
-        </svg>
-      </button>
     </>
   );
 }
