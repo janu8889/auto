@@ -57,29 +57,13 @@ function MailIcon() {
 export default function Footer() {
   return (
     <footer
-      itemScope
-      itemType="https://schema.org/WPFooter"
+  
     >
       <div className="footer-content">
         <div className="footer-grid">
           <div className="footer-brand">
-            <Link
-              href="/"
-              className="footer-logo"
-            >
-              <Image
-                src={logoAsset}
-                alt="Kash Automotive Group LLC"
-                className="footer-logo-image"
-                priority
-                style={{
-                  height: 150,
-                  width: "auto",
-                }}
-              />
-            </Link>
-
-            <p />
+            
+           
 
             <div className="footer-social" />
           </div>
