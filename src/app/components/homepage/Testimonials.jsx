@@ -1,7 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
 import avatarTyler from "../../homepage-assets/avatar-tyler.jpg";
 import avatarJason from "../../homepage-assets/avatar-jason.jpg";
@@ -64,27 +63,35 @@ function SectionHeader({ tag, title, subtitle }) {
 
 export default function Testimonials() {
   const [index, setIndex] = useState(0);
-  const [paused, setPaused] = useState(false);
+  const [count, setCount] = useState(3);
 
-  const intervalRef = useRef(null);
-
-  const visible = [
-    testimonials[index % testimonials.length],
-    testimonials[(index + 1) % testimonials.length],
-    testimonials[(index + 2) % testimonials.length],
-  ];
-
+  // responsive count (IMPORTANT FIX)
   useEffect(() => {
-    if (paused) return;
+    const updateCount = () => {
+      if (window.innerWidth < 640) setCount(1);
+      else if (window.innerWidth < 1024) setCount(2);
+      else setCount(3);
+    };
 
+    updateCount();
+    window.addEventListener("resize", updateCount);
+
+    return () => window.removeEventListener("resize", updateCount);
+  }, []);
+
+  // auto slide
+  useEffect(() => {
     const id = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonials.length);
     }, 3000);
 
-    intervalRef.current = id;
-
     return () => clearInterval(id);
-  }, [paused]);
+  }, []);
+
+  // dynamic visible items
+  const visible = Array.from({ length: count }).map((_, i) => {
+    return testimonials[(index + i) % testimonials.length];
+  });
 
   return (
     <section
@@ -99,14 +106,16 @@ export default function Testimonials() {
         />
 
         <div
-          onMouseEnter={() => setPaused(true)}
-          onMouseLeave={() => setPaused(false)}
-          className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 transition-all duration-500"
+          className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          style={{ alignItems: "stretch" }}
         >
           {visible.map((t) => (
             <div
               key={t.name}
-              className="testimonial-card transition-all duration-300"
+              className="testimonial-card"
+              style={{
+                height: "100%",
+              }}
             >
               <div className="testimonial-rating">
                 {Array.from({ length: 5 }).map((_, i) => (

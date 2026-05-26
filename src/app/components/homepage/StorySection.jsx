@@ -62,25 +62,30 @@ function ArrowIcon() {
 
 export default function StorySection() {
   return (
-    <section style={{ padding: 0, background: "#1e293b" }}>
+    <section style={{ padding: 0, background: "#1e293b", overflowX: "hidden", }}>
       <div className="story-grid">
 
         {/* IMAGE */}
-        <div style={{         position: "relative",
-    overflow: "hidden",
-    aspectRatio: "16 / 10",}}>
-          <img
-            src={showroomAsset.src}
-            alt="Showroom"
-            style={{
-              position: "absolute",
-              inset: 0,
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-            }}
-            loading="lazy"
-          />
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          aspectRatio: "16 / 10",
+          overflow: "hidden",
+          maxWidth: "100%",
+        }}
+      >
+        <img
+          src={showroomAsset.src}
+          alt="Showroom"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            display: "block", // 👈 elimină spații ghost
+          }}
+          loading="lazy"
+        />
         </div>
 
         {/* CONTENT */}
