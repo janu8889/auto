@@ -28,7 +28,11 @@ function ArrowIcon() {
 
 export default function Hero() {
   return (
-    <section>
+    <section
+      className="hero"
+      itemScope
+      itemType="https://schema.org/WebPageElement"
+    >
       <div className="hero-bg" />
 
       <div className="hero-content">
