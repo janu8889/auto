@@ -1440,6 +1440,12 @@ footer::before {
     opacity: 1
 }
 
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 700px;
+}
+
 @media (max-width:1200px) {
     .vehicles-grid {
         grid-template-columns: repeat(2, 1fr)
@@ -1633,6 +1639,10 @@ footer::before {
         gap: 1rem;
         text-align: center
     }
+
+      .story-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width:600px) {

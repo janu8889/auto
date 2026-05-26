@@ -63,10 +63,12 @@ function ArrowIcon() {
 export default function StorySection() {
   return (
     <section style={{ padding: 0, background: "#1e293b" }}>
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", minHeight: 700 }}>
+      <div className="story-grid">
 
         {/* IMAGE */}
-        <div style={{ position: "relative", overflow: "hidden" }}>
+        <div style={{         position: "relative",
+    overflow: "hidden",
+    aspectRatio: "16 / 10",}}>
           <img
             src={showroomAsset.src}
             alt="Showroom"
