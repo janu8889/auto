@@ -77,11 +77,13 @@ export default function Testimonials() {
   useEffect(() => {
     if (paused) return;
 
-    intervalRef.current = setInterval(() => {
+    const id = setInterval(() => {
       setIndex((prev) => (prev + 1) % testimonials.length);
     }, 3000);
 
-    return () => clearInterval(intervalRef.current);
+    intervalRef.current = id;
+
+    return () => clearInterval(id);
   }, [paused]);
 
   return (
@@ -97,25 +99,14 @@ export default function Testimonials() {
         />
 
         <div
-          className="testimonials-grid"
           onMouseEnter={() => setPaused(true)}
           onMouseLeave={() => setPaused(false)}
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "2rem",
-            transition: "all 0.5s ease",
-          }}
+          className="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 transition-all duration-500"
         >
           {visible.map((t) => (
             <div
               key={t.name}
-              className="testimonial-card"
-              style={{
-                opacity: 1,
-                transform: "translateY(0px)",
-                transition: "all 0.4s ease",
-              }}
+              className="testimonial-card transition-all duration-300"
             >
               <div className="testimonial-rating">
                 {Array.from({ length: 5 }).map((_, i) => (
