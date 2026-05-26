@@ -4,7 +4,6 @@ function ProcessSection({ processSteps }) {
   return (
     <section
       className="section-dark"
-      style={{ padding: "var(--section-padding) 2rem" }}
     >
       <div className="container">
         <div className="section-header reveal revealed">

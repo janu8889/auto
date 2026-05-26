@@ -7,7 +7,6 @@ function ContactSection({ subjectOptions, MailIcon, LocationIcon, ClockIcon, Arr
   return (
     <section
       style={{
-        padding: "var(--section-padding) 2rem",
         background: "var(--color-bg-primary)",
       }}
     >

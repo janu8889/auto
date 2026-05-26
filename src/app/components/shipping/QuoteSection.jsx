@@ -64,7 +64,6 @@ function QuoteSection() {
     <section
       id="quote"
       style={{
-        padding: "var(--section-padding) 2rem",
         background: "var(--color-white)",
       }}
     >

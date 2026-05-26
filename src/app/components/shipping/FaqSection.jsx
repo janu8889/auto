@@ -15,7 +15,6 @@ function FaqSection({ faqs }) {
     <section
       id="faq"
       style={{
-        padding: "var(--section-padding) 2rem",
         background: "var(--color-bg-primary)",
       }}
     >

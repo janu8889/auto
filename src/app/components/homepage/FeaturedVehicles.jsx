@@ -25,7 +25,6 @@ export default function FeaturedVehicles({ vehicles }) {
     <section
       id="featured"
       style={{
-        padding: "var(--section-padding) 2rem",
         background: "var(--color-bg-primary)",
       }}
     >

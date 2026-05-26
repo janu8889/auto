@@ -99,7 +99,6 @@ export default function ContactSection() {
   return (
     <section
       style={{
-        padding: "var(--section-padding) 2rem",
         background: "var(--color-bg-primary)",
       }}
     >

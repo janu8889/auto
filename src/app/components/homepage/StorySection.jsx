@@ -89,7 +89,7 @@ export default function StorySection() {
         </div>
 
         {/* CONTENT */}
-        <div style={{ padding: "5rem", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+        <div style={{ padding: "3rem", display: "flex", flexDirection: "column", justifyContent: "center" }}>
           <span className="section-tag" style={{ textAlign: "left" }}>
             Excellence
           </span>

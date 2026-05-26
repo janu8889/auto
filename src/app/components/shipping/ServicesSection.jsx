@@ -4,7 +4,6 @@ function ServicesSection({ services, ServiceIcon, CheckIcon }) {
   return (
     <section
       style={{
-        padding: "var(--section-padding) 2rem",
         background: "var(--color-bg-primary)",
       }}
     >
