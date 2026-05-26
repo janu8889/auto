@@ -1,4 +1,7 @@
+"use client";
+
 /* eslint-disable @next/next/no-img-element */
+import { useState } from "react";
 import Link from "next/link";
 
 function ArrowIcon() {
@@ -48,6 +51,51 @@ function SectionHeader({ tag, title, subtitle }) {
 }
 
 export default function ContactSection() {
+  const [loading, setLoading] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
+
+  async function handleSubmit(e) {
+    e.preventDefault();
+
+    setLoading(true);
+    setSuccess(false);
+    setError("");
+
+    const formData = new FormData(e.target);
+
+    const data = {
+      fullName: formData.get("fullName"),
+      email: formData.get("email"),
+      phone: formData.get("phone"),
+      message: formData.get("message"),
+      consent: formData.get("consent"),
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      const result = await res.json();
+
+      if (!res.ok) {
+        throw new Error(result?.error || "Something went wrong");
+      }
+
+      setSuccess(true);
+      e.target.reset();
+    } catch (err) {
+      setError(err.message);
+    } finally {
+      setLoading(false);
+    }
+  }
+
   return (
     <section
       style={{
@@ -124,50 +172,57 @@ export default function ContactSection() {
           <div className="contact-form">
             <h3>Request a Quote</h3>
 
-            <form id="contactForm" action="/api/contact.php" method="POST">
+            {success && (
+              <div
+                style={{
+                  padding: "1rem",
+                  marginBottom: "1rem",
+                  background: "rgba(16,185,129,0.15)",
+                  border: "1px solid rgba(16,185,129,0.4)",
+                  color: "#34D399",
+                  borderRadius: 12,
+                }}
+              >
+                ✅ Message sent! We will contact you soon.
+              </div>
+            )}
+
+            {error && (
+              <div
+                style={{
+                  padding: "1rem",
+                  marginBottom: "1rem",
+                  background: "rgba(239,68,68,0.15)",
+                  border: "1px solid rgba(239,68,68,0.4)",
+                  color: "#F87171",
+                  borderRadius: 12,
+                }}
+              >
+                ❌ {error}
+              </div>
+            )}
+
+            <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="fullName">Full Name *</label>
-                <input
-                  type="text"
-                  name="fullName"
-                  id="fullName"
-                  required
-                  placeholder="John Doe"
-                />
+                <input type="text" name="fullName" id="fullName" required />
               </div>
 
               <div className="form-row">
                 <div className="form-group">
                   <label htmlFor="email">Email *</label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    required
-                    placeholder="john@example.com"
-                  />
+                  <input type="email" name="email" id="email" required />
                 </div>
 
                 <div className="form-group">
                   <label htmlFor="phone">Phone *</label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    required
-                    placeholder="(555) 123-4567"
-                  />
+                  <input type="tel" name="phone" id="phone" required />
                 </div>
               </div>
 
               <div className="form-group">
                 <label htmlFor="message">What are you looking for?</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="4"
-                  placeholder="Example: Ford F-150, GMC Sierra, budget, mileage, etc."
-                />
+                <textarea name="message" id="message" rows="4" />
               </div>
 
               <div className="consent-group">
@@ -182,17 +237,19 @@ export default function ContactSection() {
                     I agree to be contacted by Kash Automotive Group LLC.
                     <small>
                       {" "}
-                      <Link href="/privacy">
-                        Privacy Policy
-                      </Link>
+                      <Link href="/privacy">Privacy Policy</Link>
                     </small>
                   </span>
                 </label>
               </div>
 
-              <button type="submit" className="btn btn-primary btn-block">
-                Get My Offer
-                <ArrowIcon />
+              <button
+                type="submit"
+                className="btn btn-primary btn-block"
+                disabled={loading}
+              >
+                {loading ? "Sending..." : "Get My Offer"}
+                {!loading && <ArrowIcon />}
               </button>
 
               <p className="form-note">

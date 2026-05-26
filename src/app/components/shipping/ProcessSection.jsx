@@ -19,7 +19,7 @@ function ProcessSection({ processSteps }) {
           className="stagger-children revealed"
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(4,1fr)",
+            gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
             gap: "2rem",
             maxWidth: 1000,
             margin: "0 auto",

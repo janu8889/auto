@@ -22,14 +22,7 @@ function ServicesSection({ services, ServiceIcon, CheckIcon }) {
         </div>
 
         <div
-          className="stagger-children revealed"
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(3,1fr)",
-            gap: "2rem",
-            maxWidth: 1100,
-            margin: "0 auto",
-          }}
+          className="stagger-children revealed shipping-grid"
         >
           {services.map((service) => (
             <div

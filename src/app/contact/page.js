@@ -41,14 +41,6 @@ function ClockIcon(props) {
   );
 }
 
-function ArrowIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
-      <line x1="5" y1="12" x2="19" y2="12" />
-      <polyline points="12 5 19 12 12 19" />
-    </svg>
-  );
-}
 
 
 export default function ContactPage() {
@@ -56,7 +48,7 @@ export default function ContactPage() {
     <>
       <main role="main">
         <CallBand PhoneIcon={PhoneIcon} />
-        <ContactSection subjectOptions={subjectOptions} MailIcon={MailIcon} LocationIcon={LocationIcon} ClockIcon={ClockIcon} ArrowIcon={ArrowIcon}/>
+        <ContactSection subjectOptions={subjectOptions} MailIcon={MailIcon} LocationIcon={LocationIcon} ClockIcon={ClockIcon}/>
       </main>
     </>
   );
