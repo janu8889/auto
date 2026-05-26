@@ -39,7 +39,7 @@ export default function FeaturedVehicles({ vehicles }) {
         <div className="vehicles-grid stagger-children revealed">
           {vehicles.map((vehicle) => (
             <Link
-              href={vehicle.href}
+              href={`/inventory/${vehicle.slug}`}
               className="vehicle-card"
               key={vehicle.title}
             >
@@ -58,6 +58,7 @@ export default function FeaturedVehicles({ vehicles }) {
 
                 <div className="vehicle-card-footer">
                   <p className="vehicle-price">{vehicle.price}</p>
+
                   <span className="vehicle-card-btn">
                     <ArrowIcon />
                   </span>

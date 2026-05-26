@@ -24,7 +24,7 @@ export default function FilterBar({
         />
       </div>
 
-      <div className="form-group" style={{ margin: 0, minWidth: 160 }}>
+      <div className="form-group" style={{ margin: 0 }}>
         <select value={make} onChange={(e) => onMakeChange(e.target.value)}>
           <option value="">All Makes</option>
           {makeOptions.map((m) => (
@@ -33,7 +33,7 @@ export default function FilterBar({
         </select>
       </div>
 
-      <div className="form-group" style={{ margin: 0, minWidth: 130 }}>
+      <div className="form-group" style={{ margin: 0 }}>
         <select value={year} onChange={(e) => onYearChange(e.target.value)}>
           <option value="">All Years</option>
           {yearOptions.map((y) => (
@@ -42,7 +42,7 @@ export default function FilterBar({
         </select>
       </div>
 
-      <div className="form-group" style={{ margin: 0, minWidth: 140 }}>
+      <div className="form-group" style={{ margin: 0 }}>
         <select value={sort} onChange={(e) => onSortChange(e.target.value)}>
           {sortOptions.map(([value, label]) => (
             <option key={value} value={value}>{label}</option>
