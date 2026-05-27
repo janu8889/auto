@@ -3,30 +3,31 @@ import Link from "next/link";
 export default function VehicleCard({
   vehicle,
   ArrowRightIcon,
-  vehicleImages,
 }) {
-  const image = vehicleImages[vehicle.imageIndex];
+
+  console.log(vehicle)
+  const image = vehicle.imgs[0];
 
   return (
-    <Link href="/inventory/safasd" className="vehicle-card">
+    <Link href={`/inventory/${vehicle._id}`} className="vehicle-card">
       <div className="vehicle-card-image">
-        <img src={image.src} alt={vehicle.alt} loading="lazy" />
+        <img src={image} alt={vehicle._id} />
       </div>
 
       <div className="vehicle-card-body">
-        <p className="vehicle-year">{vehicle.yearText}</p>
+        <p className="vehicle-year">{vehicle.year}</p>
 
         <h3 className="vehicle-title">
-          {vehicle.title}
+          {vehicle.name}
         </h3>
 
         <p className="vehicle-specs">
-          {vehicle.specs}
+          {vehicle.mileage} - {vehicle.engine}
         </p>
 
         <div className="vehicle-card-footer">
           <p className="vehicle-price">
-            {vehicle.priceText}
+            {vehicle.price}
           </p>
 
           <span className="vehicle-card-btn">

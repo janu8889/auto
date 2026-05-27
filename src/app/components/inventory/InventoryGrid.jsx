@@ -6,7 +6,6 @@ import { useMemo, useState } from "react";
 import FilterBar from "./FilterBar";
 import VehicleCard from "./VehicleCard";
 
-
 function ArrowRightIcon(props) {
   return (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" {...props}>
@@ -27,7 +26,6 @@ function SearchIcon(props) {
 
 export default function InventoryGrid({
   vehicles,
-  vehicleImages,
   makeOptions,
   yearOptions,
   sortOptions,
@@ -44,8 +42,8 @@ export default function InventoryGrid({
     const filtered = vehicles.filter((vehicle) => {
       const matchesSearch =
         !query ||
-        vehicle.search.toLowerCase().includes(query) ||
-        vehicle.title.toLowerCase().includes(query);
+        (vehicle.search || "").toLowerCase().includes(query) ||
+        (vehicle.title || "").toLowerCase().includes(query);
 
       const matchesMake = !make || vehicle.make === make;
       const matchesYear = !year || String(vehicle.year) === year;
@@ -54,7 +52,7 @@ export default function InventoryGrid({
     });
 
     return sortVehicles(filtered, sort);
-  }, [search, make, year, sort]);
+  }, [search, make, year, sort, vehicles, sortVehicles]);
 
   return (
     <section className="inventory-section">
@@ -78,24 +76,25 @@ export default function InventoryGrid({
         <div className="inventory-grid" id="vehicleGrid">
           {visibleVehicles.map((vehicle) => (
             <VehicleCard
-              key={vehicle.href}
+              key={vehicle._id || vehicle.href}
               vehicle={vehicle}
-              vehicleImages={vehicleImages}
               ArrowRightIcon={ArrowRightIcon}
             />
           ))}
         </div>
 
-        <div
-          className="inventory-empty"
-          style={{
-            display: visibleVehicles.length ? "none" : "block",
-            textAlign: "center",
-            padding: "4rem 2rem",
-          }}
-        >
-          <SearchIcon style={{ width: 64, height: 64, marginBottom: "1.5rem" }} />
-        </div>
+        {visibleVehicles.length === 0 && (
+          <div
+            className="inventory-empty"
+            style={{
+              textAlign: "center",
+              padding: "4rem 2rem",
+            }}
+          >
+            <SearchIcon style={{ width: 64, height: 64, marginBottom: "1.5rem" }} />
+            <p>No vehicles found</p>
+          </div>
+        )}
 
         <p className="inventory-count">
           Showing <span>{visibleVehicles.length}</span> of {vehicles.length} vehicles

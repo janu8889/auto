@@ -38,25 +38,25 @@ export default function FeaturedVehicles({ vehicles }) {
         <div className="vehicles-grid stagger-children revealed">
           {vehicles.map((vehicle) => (
             <Link
-              href={`/inventory/${vehicle.slug}`}
+              href={`/inventory/${vehicle._id}`}
               className="vehicle-card"
-              key={vehicle.title}
+              key={vehicle._id}
             >
               <div className="vehicle-card-image">
                 <img
-                  src={vehicle.image.src}
-                  alt={vehicle.title}
-                  loading="lazy"
+                  src={vehicle.imgs?.[0]}
+                  alt={vehicle.name}
                 />
               </div>
+            {console.log(vehicle._id)}
 
               <div className="vehicle-card-body">
                 <p className="vehicle-year">{vehicle.year}</p>
-                <h3 className="vehicle-title">{vehicle.title}</h3>
-                <p className="vehicle-specs">{vehicle.specs}</p>
+                <h3 className="vehicle-title">{vehicle.name}</h3>
+                <p className="vehicle-specs">{vehicle.mileage} miles - {vehicle.engine}</p>
 
                 <div className="vehicle-card-footer">
-                  <p className="vehicle-price">{vehicle.price}</p>
+                  <p className="vehicle-price">$ {vehicle.price}</p>
 
                   <span className="vehicle-card-btn">
                     <ArrowIcon />
