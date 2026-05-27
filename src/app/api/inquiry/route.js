@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req) {
   try {
-    const { fullName, email, phone, subject, message } = await req.json();
+    const { fullName, email, phone, subject, message, car } = await req.json();
 
     // basic validation
     if (!fullName || !email || !phone) {
@@ -30,6 +30,7 @@ export async function POST(req) {
       `📞 Phone: ${phone}`,
       `📌 Subject: ${subject || "Vehicle Inquiry"}`,
       `💬 Message: ${message || "-"}`,
+      `car: ${car}`,
       "----------------------",
       `🕒 Time: ${new Date().toLocaleString("ro-RO")}`,
     ].join("\n");

@@ -75,6 +75,13 @@ export default function VehicleGallery({ images = [] }) {
           <img
             className="gallery-lightbox-image"
             src={images[active]}
+              alt=""
+              onClick={() => setLightboxOpen(true)}
+              style={{
+                cursor: "zoom-in",
+                width: "100%",
+                objectFit: "cover",
+            }}
             alt=""
             onClick={(e) => e.stopPropagation()}
           />

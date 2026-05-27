@@ -11,7 +11,7 @@ function MailIconSmall(props) {
   return <MailIcon {...props} style={{ width: 14, height: 14, ...props.style }} />;
 }
 
-function InquiryForm() {
+function InquiryForm({id}) {
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState(""); // "success" | "error"
 
@@ -35,6 +35,7 @@ function InquiryForm() {
 					phone: formData.get("phone"),
 					subject: "Vehicle Inquiry",
 					message: formData.get("message"),
+          car: `https://auto-phi-five.vercel.app/inventory/${id}`
 				}),
 			});
 

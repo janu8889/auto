@@ -20,7 +20,7 @@ const states = [
   ["WI", "Wisconsin"], ["WY", "Wyoming"], ["DC", "Washington DC"],
 ];
 
-export default function PurchaseForm() {
+export default function PurchaseForm({ id }) {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
@@ -34,7 +34,8 @@ export default function PurchaseForm() {
 
     try {
       const formData = new FormData(e.target);
-
+      formData.append("vehicleId", id);
+      
       const res = await fetch("/api/purchase", {
         method: "POST",
         body: formData, // IMPORTANT: păstrează upload file

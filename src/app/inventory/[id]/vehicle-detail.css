@@ -1041,11 +1041,14 @@ footer::before {
 }
 
 .gallery-thumbnails {
-    display: flex;
-    gap: 0.5rem;
-    padding: 1rem;
-    overflow-x: auto;
-    background: #1A1D2E
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.gallery-thumbnails button {
+  flex: 0 0 auto;
 }
 
 .gallery-thumb {
@@ -2207,6 +2210,12 @@ footer {
 
 .gallery-lightbox-next {
   right: 24px;
+}
+
+.gallery-thumbnails img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
 }
 
 /* ICON SIZE */

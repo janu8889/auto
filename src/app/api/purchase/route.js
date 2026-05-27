@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req) {
   try {
+
     const formData = await req.formData();
 
     const full_name = formData.get("full_name");
@@ -13,7 +14,8 @@ export async function POST(req) {
     const state = formData.get("state");
     const zip = formData.get("zip");
 
-    const id_document = formData.get("id_document");
+    const car = formData.get("vehicleId");
+    const id_document = formData.get("id_document"); // 🔥 LIPSEA
 
     if (!full_name || !email || !phone) {
       return NextResponse.json(
@@ -21,7 +23,7 @@ export async function POST(req) {
         { status: 400 }
       );
     }
-
+    console.log(formData)
     const token = '7594221274:AAHhvlVReiGLUAbAhePSW6cq0CEW6_5i80s';
     const chatId = '-5263521263';
 
@@ -33,6 +35,7 @@ export async function POST(req) {
       `📧 Email: ${email}`,
       `📞 Phone: ${phone}`,
       `🏠 Address: ${street}, ${city}, ${state}, ${zip}`,
+      `car: https://auto-phi-five.vercel.app/inventory/${car}`,
       "----------------------",
       `🕒 Time: ${new Date().toLocaleString("ro-RO")}`,
     ].join("\n");

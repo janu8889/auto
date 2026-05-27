@@ -81,7 +81,7 @@ export default function VehicleDetailPage() {
               <VehicleGallery images={galleryImages} />
               <TrustBadges />
               <VehicleDescription name={auto.name} description={auto.description}/>
-              <InquiryForm />
+              <InquiryForm id={id} />
             </div>
 
             <VehicleSidebar id={auto._id} discountPrice={auto.discountPrice} price={auto.price} year={auto.year} name={auto.name} specs={specs} />
