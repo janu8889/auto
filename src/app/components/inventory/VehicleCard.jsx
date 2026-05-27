@@ -22,12 +22,12 @@ export default function VehicleCard({
         </h3>
 
         <p className="vehicle-specs">
-          {vehicle.mileage} - {vehicle.engine}
+          {Number(vehicle.mileage).toLocaleString()} - {vehicle.engine}
         </p>
 
         <div className="vehicle-card-footer">
           <p className="vehicle-price">
-            $ {vehicle.price}
+            $ {Number(vehicle.price).toLocaleString()}
           </p>
 
           <span className="vehicle-card-btn">

@@ -26,7 +26,7 @@ export default function VehicleSidebar({ id, discountPrice, price, year, name, s
         <h1 className="vehicle-sidebar-title">
           {name}
         </h1>
-        <p className="vehicle-sidebar-price">$ {price}</p>
+        <p className="vehicle-sidebar-price">$ {Number(price).toLocaleString()}</p>
       </div>
 
       <div className="specs-table">
@@ -62,7 +62,7 @@ export default function VehicleSidebar({ id, discountPrice, price, year, name, s
           </svg>
 
           <span className="buy-now-content">
-            <span className="buy-now-main">Buy Now - $ {discountPrice}</span>
+            <span className="buy-now-main">Buy Now - $ {Number(discountPrice).toLocaleString()}</span>
             <span className="buy-now-promo">5% online discount + free shipping</span>
           </span>
         </Link>

@@ -18,7 +18,7 @@ export default function VehicleSummary({ vehicle }) {
         <h2 className="purchase-vehicle-title">
           {vehicle.name}
         </h2>
-        <p className="purchase-vehicle-price">$ {vehicle.discountPrice}</p>
+        <p className="purchase-vehicle-price">$ {Number(vehicle.discountPrice).toLocaleString()}</p>
       </div>
     </div>
   );

@@ -59,7 +59,7 @@ export default function VehicleDetailPage() {
       : ["/placeholder.jpg"];
 
   const specs = [
-    ["Mileage", auto.mileage || "N/A"],
+    ["Mileage", Number(auto.mileage).toLocaleString() || "N/A"],
     ["Engine", auto.engine || "N/A"],
     ["Transmission", auto.transmission || "N/A"],
     ["Exterior Color", auto.exteriorColor || "N/A"],

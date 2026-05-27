@@ -53,10 +53,10 @@ export default function FeaturedVehicles({ vehicles }) {
               <div className="vehicle-card-body">
                 <p className="vehicle-year">{vehicle.year}</p>
                 <h3 className="vehicle-title">{vehicle.name}</h3>
-                <p className="vehicle-specs">{vehicle.mileage} miles - {vehicle.engine}</p>
+                <p className="vehicle-specs">{Number(vehicle.mileage).toLocaleString()} miles - {vehicle.engine}</p>
 
                 <div className="vehicle-card-footer">
-                  <p className="vehicle-price">$ {vehicle.price}</p>
+                  <p className="vehicle-price">$ {Number(vehicle.price).toLocaleString()}</p>
 
                   <span className="vehicle-card-btn">
                     <ArrowIcon />
