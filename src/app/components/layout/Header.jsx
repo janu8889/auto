@@ -64,9 +64,9 @@ export default function Header() {
               </Link>
             ))}
 
-            <a href="tel:2185050788" className="nav-cta">
+            <a href="tel:000-000-0000" className="nav-cta">
               <PhoneIcon />
-              218-505-0788
+              000-000-0000
             </a>
           </div>
 
@@ -90,7 +90,7 @@ export default function Header() {
           
           {/* PHONE TOP */}
           <a
-            href="tel:2185050788"
+            href="tel:000-000-0000"
             style={{
               display: "flex",
               alignItems: "center",
@@ -102,7 +102,7 @@ export default function Header() {
             }}
           >
             <PhoneIcon />
-            218-505-0788
+            000-000-0000
           </a>
 
           {/* LINKS */}

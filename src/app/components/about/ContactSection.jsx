@@ -40,7 +40,7 @@ function ContactSection({ LocationIcon, ClockIcon, PhoneIcon, ExternalIcon }) {
               <div className="contact-item-content">
                 <h4>Call Us</h4>
                 <p>
-                  <a href="tel:2185050788">218-505-0788</a>
+                  <a href="tel:000-000-0000">000-000-0000</a>
                 </p>
               </div>
             </div>

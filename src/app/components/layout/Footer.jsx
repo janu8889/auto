@@ -144,16 +144,16 @@ export default function Footer() {
             <div className="footer-contact-item">
               <PhoneIcon />
 
-              <a href="tel:2185050788">
-                218-505-0788
+              <a href="tel:000-000-0000">
+                000-000-0000
               </a>
             </div>
 
             <div className="footer-contact-item">
               <MailIcon />
 
-              <a href="mailto:sales@kandeautosales.com">
-                sales@kandeautosales.com
+              <a href="mailto:sales@kashautomotive.com">
+                sales@kashautomotive.com
               </a>
             </div>
           </div>

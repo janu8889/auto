@@ -46,15 +46,15 @@ function LegalContent({ legalSections }) {
 
               <p>
                 Phone:{" "}
-                <a href="tel:2185050788">
-                  218-505-0788
+                <a href="tel:000000">
+                  000-000-0000
                 </a>
               </p>
 
               <p>
                 Email:{" "}
-                <a href="mailto:sales@kandeautosales.com">
-                  sales@kandeautosales.com
+                <a href="mailto:sales@kashautomotive.com">
+                  sales@kashautomotive.com
                 </a>
               </p>
             </div>

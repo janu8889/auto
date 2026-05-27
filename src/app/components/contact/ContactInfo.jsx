@@ -31,7 +31,7 @@ function ContactInfo({MailIcon, LocationIcon, ClockIcon}) {
           <h4>Email</h4>
 
           <p>
-            <a href="mailto:sales@.com">sales@.com</a>
+            <a href="mailto:sales@kashautomotive.com">sales@kashautomotive.com</a>
           </p>
         </div>
       </div>

@@ -73,10 +73,10 @@ function LegalContent() {
               </p>
               <p>3595 Buckhead Loop NE, Atlanta, GA 31126</p>
               <p>
-                Phone: <a href="tel:2185050788">218-505-0788</a>
+                Phone: <a href="tel:0000000">000-000-0000</a>
               </p>
               <p>
-                Email: <a href="mailto:sales@kandeautosales.com">sales@kandeautosales.com</a>
+                Email: <a href="mailto:sales@kashautomotive.com">sales@kashautomotive.com</a>
               </p>
             </div>
           </div>

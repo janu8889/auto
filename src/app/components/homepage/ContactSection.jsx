@@ -136,14 +136,14 @@ export default function ContactSection() {
                 <h4>Phone</h4>
                 <p>
                   <a
-                    href="tel:2185050788"
+                    href="tel:000-000-0000"
                     style={{
                       color: "var(--color-gold)",
                       fontWeight: 600,
                       fontSize: "1.125rem",
                     }}
                   >
-                    218-505-0788
+                    000-000-0000
                   </a>
                 </p>
               </div>
