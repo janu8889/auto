@@ -78,8 +78,6 @@ export default function VehicleGallery({ images = [] }) {
               alt=""
               onClick={() => setLightboxOpen(true)}
               style={{
-                cursor: "zoom-in",
-                width: "100%",
                 objectFit: "cover",
             }}
             alt=""
