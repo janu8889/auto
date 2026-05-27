@@ -70,10 +70,6 @@ export default function InventoryGrid({
           </div>
         )}
 
-        <p className="inventory-count">
-          Showing <span>{vehicles.length}</span> vehicles
-        </p>
-
       </div>
     </section>
   );

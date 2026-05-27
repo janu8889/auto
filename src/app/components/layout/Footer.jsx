@@ -85,6 +85,12 @@ export default function Footer() {
               </li>
 
               <li>
+                <Link href="/sold">
+                  Sold
+                </Link>
+              </li>
+
+              <li>
                 <Link href="/about">
                   About Us
                 </Link>
@@ -144,8 +150,8 @@ export default function Footer() {
             <div className="footer-contact-item">
               <PhoneIcon />
 
-              <a href="tel:000-000-0000">
-                000-000-0000
+              <a href="tel:+14044521218">
+                (404) 452-1218
               </a>
             </div>
 

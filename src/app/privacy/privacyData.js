@@ -106,7 +106,7 @@ const privacySections = [
         "items": [
           {
             "strong": "Phone calls",
-            "text": "from Kash Automotive Group LLC at 000-000-0000 regarding your inquiry and related vehicle information"
+            "text": "from Kash Automotive Group LLC at (404) 452-1218 regarding your inquiry and related vehicle information"
           },
           {
             "strong": "SMS/Text messages",

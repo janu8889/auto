@@ -13,9 +13,9 @@ const navLeft = [
 ];
 
 const navRight = [
+  { label: "Sold", href: "/sold" },
   { label: "Shipping", href: "/shipping" },
   { label: "Contact", href: "/contact" },
-  { label: "Sold", href: "/sold" },
 
 ];
 
@@ -66,9 +66,9 @@ export default function Header() {
               </Link>
             ))}
 
-            <a href="tel:000-000-0000" className="nav-cta">
+            <a href="tel:+14044521218" className="nav-cta">
               <PhoneIcon />
-              000-000-0000
+              (404) 452-1218
             </a>
           </div>
 
@@ -92,7 +92,7 @@ export default function Header() {
           
           {/* PHONE TOP */}
           <a
-            href="tel:000-000-0000"
+            href="tel:+14044521218"
             style={{
               display: "flex",
               alignItems: "center",
@@ -104,7 +104,7 @@ export default function Header() {
             }}
           >
             <PhoneIcon />
-            000-000-0000
+            (404) 452-1218
           </a>
 
           {/* LINKS */}
