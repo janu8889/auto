@@ -7,7 +7,7 @@ export async function GET() {
     await dbConnect();
 
     const autos = await Auto.aggregate([
-      { $sort: { createdAt: -1 } },
+      { $sort: { createdAt: 1 } },
       {
         $project: {
           name: 1,

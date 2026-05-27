@@ -15,6 +15,8 @@ const navLeft = [
 const navRight = [
   { label: "Shipping", href: "/shipping" },
   { label: "Contact", href: "/contact" },
+  { label: "Sold", href: "/sold" },
+
 ];
 
 function PhoneIcon() {
