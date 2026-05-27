@@ -27,7 +27,7 @@ export default function VehicleCard({
 
         <div className="vehicle-card-footer">
           <p className="vehicle-price">
-            {vehicle.price}
+            $ {vehicle.price}
           </p>
 
           <span className="vehicle-card-btn">

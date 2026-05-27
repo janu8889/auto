@@ -3,9 +3,12 @@
 import { useState } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "./icons";
 
-export default function VehicleGallery({ images }) {
+export default function VehicleGallery({ images = [] }) {
+
   const [active, setActive] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+
+  if (!images.length) return null;
 
   const prevImage = () => {
     setActive((a) => (a === 0 ? images.length - 1 : a - 1));
@@ -20,7 +23,7 @@ export default function VehicleGallery({ images }) {
       <div className="vehicle-gallery">
         <div className="gallery-main">
           <img
-            src={images[active].src}
+            src={images[active]}
             alt=""
             onClick={() => setLightboxOpen(true)}
             style={{ cursor: "zoom-in" }}
@@ -38,7 +41,7 @@ export default function VehicleGallery({ images }) {
         <div className="gallery-thumbnails">
           {images.map((img, i) => (
             <button key={i} onClick={() => setActive(i)}>
-              <img src={img.src} alt="" />
+              <img src={img} alt="" />
             </button>
           ))}
         </div>
@@ -51,7 +54,10 @@ export default function VehicleGallery({ images }) {
         >
           <button
             className="gallery-lightbox-close"
-            onClick={() => setLightboxOpen(false)}
+            onClick={(e) => {
+              e.stopPropagation();
+              setLightboxOpen(false);
+            }}
           >
             ✕
           </button>
@@ -68,7 +74,7 @@ export default function VehicleGallery({ images }) {
 
           <img
             className="gallery-lightbox-image"
-            src={images[active].src}
+            src={images[active]}
             alt=""
             onClick={(e) => e.stopPropagation()}
           />

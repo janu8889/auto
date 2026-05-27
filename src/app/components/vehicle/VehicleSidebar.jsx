@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
 
 function PhoneIcon(props) {
   return (
@@ -19,15 +18,15 @@ function MailIcon(props) {
   );
 }
 
-export default function VehicleSidebar({ specs }) {
+export default function VehicleSidebar({ id, discountPrice, price, year, name, specs }) {
   return (
     <div className="vehicle-sidebar">
       <div className="vehicle-sidebar-header">
-        <p className="vehicle-sidebar-year">2023</p>
+        <p className="vehicle-sidebar-year">{year}</p>
         <h1 className="vehicle-sidebar-title">
-          Ford F-150 Raptor Hennessey VelociRaptor 600
+          {name}
         </h1>
-        <p className="vehicle-sidebar-price">$65,000</p>
+        <p className="vehicle-sidebar-price">$ {price}</p>
       </div>
 
       <div className="specs-table">
@@ -53,7 +52,7 @@ export default function VehicleSidebar({ specs }) {
         </div>
 
         <Link
-          href="/purchase/43rsfdsddas4"
+          href={`/purchase/${id}`}
           className="btn btn-buy-now btn-lg"
         >
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" style={{ width: 14, height: 14 }}>
@@ -63,7 +62,7 @@ export default function VehicleSidebar({ specs }) {
           </svg>
 
           <span className="buy-now-content">
-            <span className="buy-now-main">Buy Now - Save $3,250</span>
+            <span className="buy-now-main">Buy Now - $ {discountPrice}</span>
             <span className="buy-now-promo">5% online discount + free shipping</span>
           </span>
         </Link>

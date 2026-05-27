@@ -1642,10 +1642,11 @@ footer {
     display: none !important
 }
 
+
 .gallery-lightbox {
   position: fixed;
   inset: 0;
-  z-index: 9999;
+  z-index: 99999;
 
   background: rgba(0, 0, 0, 0.92);
 
@@ -1660,6 +1661,7 @@ footer {
   object-fit: contain;
 }
 
+/* BUTTONS */
 .gallery-lightbox-close,
 .gallery-lightbox-prev,
 .gallery-lightbox-next {
@@ -1674,6 +1676,7 @@ footer {
   justify-content: center;
 }
 
+/* CLOSE */
 .gallery-lightbox-close {
   top: 24px;
   right: 24px;
@@ -1685,6 +1688,7 @@ footer {
   font-size: 24px;
 }
 
+/* ARROWS */
 .gallery-lightbox-prev,
 .gallery-lightbox-next {
   top: 50%;
@@ -1704,6 +1708,7 @@ footer {
   right: 24px;
 }
 
+/* ICON SIZE */
 .gallery-lightbox-prev svg,
 .gallery-lightbox-next svg {
   width: 28px;
