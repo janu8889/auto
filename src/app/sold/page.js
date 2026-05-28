@@ -39,6 +39,9 @@ export default function SoldPage() {
 
   const [loading, setLoading] = useState(true);
 
+  // HOW MANY ARE SHOWN
+  const [visibleCount, setVisibleCount] = useState(4);
+
   const [search, setSearch] = useState("");
 
   const [selectedMake, setSelectedMake] = useState("");
@@ -120,12 +123,19 @@ export default function SoldPage() {
     selectedSort,
   ]);
 
+  // LOAD MORE
+  function handleLoadMore() {
+    setVisibleCount((prev) => prev + 4);
+  }
+
   return (
     <main role="main">
       <div className="page-header">
         <span className="hero-tag">Sold</span>
         <h1>Sold Vehicles</h1>
-        <p>A record of vehicles successfully sold through our platform</p>
+        <p>
+          A record of vehicles successfully sold through our platform
+        </p>
       </div>
 
       {loading ? (
@@ -133,23 +143,51 @@ export default function SoldPage() {
           Loading vehicles...
         </p>
       ) : (
-        <InventoryGrid
-          vehicles={filteredVehicles}
-          sortOptions={sortOptions}
-          yearOptions={yearOptions}
-          makeOptions={makeOptions}
+        <>
+          <InventoryGrid
+            vehicles={filteredVehicles.slice(0, visibleCount)}
+            sortOptions={sortOptions}
+            yearOptions={yearOptions}
+            makeOptions={makeOptions}
 
-          search={search}
-          setSearch={setSearch}
+            search={search}
+            setSearch={setSearch}
 
-          selectedMake={selectedMake}
-          selectedYear={selectedYear}
-          selectedSort={selectedSort}
+            selectedMake={selectedMake}
+            selectedYear={selectedYear}
+            selectedSort={selectedSort}
 
-          setSelectedMake={setSelectedMake}
-          setSelectedYear={setSelectedYear}
-          setSelectedSort={setSelectedSort}
-        />
+            setSelectedMake={setSelectedMake}
+            setSelectedYear={setSelectedYear}
+            setSelectedSort={setSelectedSort}
+          />
+
+          {/* LOAD MORE BUTTON */}
+          {visibleCount < filteredVehicles.length && (
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                marginTop: "40px",
+                marginBottom: "60px",
+              }}
+            >
+              <button
+                onClick={handleLoadMore}
+                style={{
+                  padding: "14px 28px",
+                  borderRadius: "12px",
+                  border: "none",
+                  cursor: "pointer",
+                  fontSize: "16px",
+                  fontWeight: "600",
+                }}
+              >
+                Load More
+              </button>
+            </div>
+          )}
+        </>
       )}
     </main>
   );
