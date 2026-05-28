@@ -45,7 +45,7 @@ export default function VehicleSidebar({ id, discountPrice, price, year, name, s
             Inquiry
           </a>
 
-          <a href="tel:2185050788" className="btn btn-secondary btn-md">
+          <a href="tel:+14044521218" className="btn btn-secondary btn-md">
             <PhoneIcon style={{ width: 16, height: 16 }} />
             Call Now
           </a>
