@@ -49,7 +49,7 @@ export default function SoldPage() {
   useEffect(() => {
     async function load() {
       try {
-        const res = await fetch("/api/autos");
+        const res = await fetch("/api/sold");
         const data = await res.json();
 
         const autos = data.autos || [];

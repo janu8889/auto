@@ -1,6 +1,6 @@
 const stats = [
   ["7+", "Years in Business"],
-  ["500+", "Happy Customers"],
+  ["300+", "Happy Customers"],
   ["50", "States Served"],
   ["100%", "Satisfaction Focus"],
 ];

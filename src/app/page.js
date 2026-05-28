@@ -40,9 +40,9 @@ export default function Home() {
   }, []);
 
   const stats = [
-    { value: "22+", label: "Cars Available" },
+    { value: "20+", label: "Cars Available" },
     { value: "7+", label: "Years Experience" },
-    { value: "500+", label: "Happy Customers" },
+    { value: "300+", label: "Happy Customers" },
     { value: "50", label: "States Served" },
   ];
 
