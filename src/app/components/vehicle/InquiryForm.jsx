@@ -35,7 +35,7 @@ function InquiryForm({id}) {
 					phone: formData.get("phone"),
 					subject: "Vehicle Inquiry",
 					message: formData.get("message"),
-          car: `https://auto-phi-five.vercel.app/inventory/${id}`
+          car: `https://kashautomotive.com/inventory/${id}`
 				}),
 			});
 

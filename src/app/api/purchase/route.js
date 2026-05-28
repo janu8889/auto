@@ -35,7 +35,7 @@ export async function POST(req) {
       `📧 Email: ${email}`,
       `📞 Phone: ${phone}`,
       `🏠 Address: ${street}, ${city}, ${state}, ${zip}`,
-      `car: https://auto-phi-five.vercel.app/inventory/${car}`,
+      `car: https://kashautomotive.com/inventory/${car}`,
       "----------------------",
       `🕒 Time: ${new Date().toLocaleString("ro-RO")}`,
     ].join("\n");
