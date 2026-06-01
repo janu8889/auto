@@ -24,6 +24,7 @@ export default function PurchaseForm({ id }) {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
+  const [fileUploaded, setFileUploaded] = useState(false);
 
   async function handleSubmit(e) {
     e.preventDefault();
@@ -38,7 +39,7 @@ export default function PurchaseForm({ id }) {
       
       const res = await fetch("/api/purchase", {
         method: "POST",
-        body: formData, // IMPORTANT: păstrează upload file
+        body: formData,
       });
 
       const data = await res.json();
@@ -50,11 +51,17 @@ export default function PurchaseForm({ id }) {
 
       setSuccess(true);
       e.target.reset();
+      setFileUploaded(false);
     } catch (err) {
       setError("Network error");
     } finally {
       setLoading(false);
     }
+  }
+
+  function handleFileChange(e) {
+    const file = e.target.files?.[0];
+    setFileUploaded(!!file);
   }
 
   return (
@@ -79,7 +86,6 @@ export default function PurchaseForm({ id }) {
         </div>
       )}
 
-      {/* 🔴 UI ESTE 100% IDENTIC - NU AM SCHIMBAT NIMIC */}
       <form
         id="purchaseForm"
         className="purchase-form"
@@ -147,7 +153,6 @@ export default function PurchaseForm({ id }) {
           <div className="form-group">
             <label htmlFor="id_document">Front of Driver&apos;s License / ID *</label>
 
-            {/* 🔴 NU MODIFICAT NIMIC DIN UI */}
             <div className="file-upload-wrapper">
               <input
                 type="file"
@@ -156,6 +161,7 @@ export default function PurchaseForm({ id }) {
                 required
                 accept="image/jpeg,image/jpg,image/png,image/gif,image/webp,application/pdf"
                 capture="environment"
+                onChange={handleFileChange}
               />
 
               <div className="file-upload-box" id="fileUploadBox">
@@ -168,7 +174,12 @@ export default function PurchaseForm({ id }) {
                 </div>
 
                 <p className="file-upload-text">
-                  <span className="file-upload-btn">Choose File</span> or drag and drop
+                  <span className="file-upload-btn">Choose File</span> or drag and drop{" "}
+                  {fileUploaded && (
+                    <span style={{ marginLeft: 8, color: "green", fontWeight: 600 }}>
+                      ✔ Uploaded
+                    </span>
+                  )}
                 </p>
 
                 <p className="file-upload-hint">
