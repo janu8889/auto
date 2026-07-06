@@ -22,7 +22,7 @@ function CallBand({PhoneIcon}) {
       </p>
 
       <a
-        href="tel:+14044521218"
+        href="tel:4044295639"
         style={{
           display: "inline-flex",
           alignItems: "center",
@@ -34,7 +34,7 @@ function CallBand({PhoneIcon}) {
         }}
       >
         <PhoneIcon style={{ width: 32, height: 32 }} />
-        (404) 452-1218
+        (404) 429-5639
       </a>
     </div>
   );

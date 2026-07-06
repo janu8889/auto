@@ -73,7 +73,7 @@ function LegalContent() {
               </p>
               <p>3595 Buckhead Loop NE, Atlanta, GA 31126</p>
               <p>
-                Phone: <a href="tel:+14044521218">(404) 452-1218</a>
+                Phone: <a href="tel:4044295639">(404) 429-5639</a>
               </p>
               <p>
                 Email: <a href="mailto:sales@kashautomotive.com">sales@kashautomotive.com</a>

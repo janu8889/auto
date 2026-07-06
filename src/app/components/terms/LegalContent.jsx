@@ -46,8 +46,8 @@ function LegalContent({ legalSections }) {
 
               <p>
                 Phone:{" "}
-                <a href="tel:+14044521218">
-                  (404) 452-1218
+                <a href="tel:4044295639">
+                  (404) 429-5639
                 </a>
               </p>
 

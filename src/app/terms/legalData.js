@@ -134,7 +134,7 @@ const legalSections = [
         "items": [
           {
             "strong": "Phone Calls:",
-            "text": "You consent to receive telephone calls, including calls made using an automatic telephone dialing system, at the phone number you provided, from Kash Automotive Group LLC at 218-505-0788."
+            "text": "You consent to receive telephone calls, including calls made using an automatic telephone dialing system, at the phone number you provided, from Kash Automotive Group LLC at (404) 429-5639."
           },
           {
             "strong": "Text Messages (SMS):",
