@@ -52,7 +52,7 @@ export default function Header() {
               className="logo-image"
               priority
               style={{
-                height: "100px",
+                height: "70px",
                 width: "auto",
               }}
             />
