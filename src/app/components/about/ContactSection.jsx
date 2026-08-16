@@ -16,9 +16,9 @@ function ContactSection({ LocationIcon, ClockIcon, PhoneIcon, ExternalIcon }) {
               <div className="contact-item-content">
                 <h4>Location</h4>
                 <p>
-                  3595 Buckhead Loop NE
+                  5724 New Peachtree Rd Ste A-1, Chamblee
                   <br />
-                  Atlanta, GA 31126
+                  Atlanta, GA 30341
                 </p>
               </div>
             </div>
@@ -68,10 +68,10 @@ function ContactSection({ LocationIcon, ClockIcon, PhoneIcon, ExternalIcon }) {
                   strokeWidth: 1.5,
                 }}
               />
-              <p style={{ color: "var(--color-text-secondary)" }}>3595 Buckhead Loop NE </p>
+              <p style={{ color: "var(--color-text-secondary)" }}> 5724 New Peachtree Rd Ste A-1, Chamblee </p>
 
               <a
-                href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=/maps/place//data%3D!4m2!3m1!1s0x88f50f1118973e1b:0xb736585a8cb5e537%3Fsa%3DX%26ved%3D1t:8290%26ictx%3D111"
+                href="https://maps.app.goo.gl/6V2nfCpUjjJHRff78"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline"

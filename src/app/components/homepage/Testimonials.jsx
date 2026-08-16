@@ -12,32 +12,32 @@ import avatarRobert from "../../homepage-assets/avatar-robert.jpg";
 const testimonials = [
   {
     name: "Tyler Brooks",
-    text: "I purchased a brand new F-350 from Kash Automotive Group LLC and the process was flawless from start to finish. They knew exactly what I needed for my work, helped me choose the right configuration, and had everything ready quickly. The truck showed up exactly as promised, no surprises. Solid team and real professionals.",
+    text: "I purchased a brand new F-350 from Z Motors and the process was flawless from start to finish. They knew exactly what I needed for my work, helped me choose the right configuration, and had everything ready quickly. The truck showed up exactly as promised, no surprises. Solid team and real professionals.",
     image: avatarTyler,
   },
   {
     name: "Jason Miller",
-    text: "We've sourced multiple new trucks through Kash Automotive Group LLC, including Sierra 3500HD models for our fleet. Every unit was exactly as described, and the communication throughout the process was excellent. If you're looking for heavy-duty trucks without wasting time, this is the place.",
+    text: "We've sourced multiple new trucks through Z Motors, including Sierra 3500HD models for our fleet. Every unit was exactly as described, and the communication throughout the process was excellent. If you're looking for heavy-duty trucks without wasting time, this is the place.",
     image: avatarJason,
   },
   {
     name: "Chris Alvarez",
-    text: "Picked up a brand new GMC Sierra 3500HD and couldn't be happier. The team at Kash Automotive Group LLC made everything straightforward - no pressure, just clear information and fast execution. They even handled the delivery to my location without any issues. Highly recommend if you want it done right.",
+    text: "Picked up a brand new GMC Sierra 3500HD and couldn't be happier. The team at Z Motors made everything straightforward - no pressure, just clear information and fast execution. They even handled the delivery to my location without any issues. Highly recommend if you want it done right.",
     image: avatarChris,
   },
   {
     name: "Mike Thompson",
-    text: "I purchased a Ford F-150 through Kash Automotive Group LLC and the entire experience was smooth and efficient. They helped me choose the right setup for both work and personal use, and everything was delivered exactly as promised. The truck arrived in perfect condition and ready to drive.",
+    text: "I purchased a Ford F-150 through Z Motors and the entire experience was smooth and efficient. They helped me choose the right setup for both work and personal use, and everything was delivered exactly as promised. The truck arrived in perfect condition and ready to drive.",
     image: avatarMike,
   },
   {
     name: "Daniel Carter",
-    text: "We sourced a Chevrolet Silverado 1500 through Kash Automotive Group LLC for our operations and were very impressed with the service. Communication was clear, pricing was transparent, and the vehicle matched all specifications. Delivery was fast and completely hassle-free.",
+    text: "We sourced a Chevrolet Silverado 1500 through Z Motors for our operations and were very impressed with the service. Communication was clear, pricing was transparent, and the vehicle matched all specifications. Delivery was fast and completely hassle-free.",
     image: avatarDaniel,
   },
   {
     name: "Robert Smith",
-    text: "Bought a Ram 2500 through Kash Automotive Group LLC and the whole process was excellent. They kept me updated at every step and made sure the truck was exactly what I needed. It arrived on time and in perfect condition—couldn’t ask for better service.",
+    text: "Bought a Ram 2500 through Z Motors and the whole process was excellent. They kept me updated at every step and made sure the truck was exactly what I needed. It arrived on time and in perfect condition—couldn’t ask for better service.",
     image: avatarRobert,
   },
 ];

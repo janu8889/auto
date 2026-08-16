@@ -121,9 +121,9 @@ export default function ContactSection() {
               <div className="contact-item-content">
                 <h4>Location</h4>
                 <p>
-                  3595 Buckhead Loop NE
+                  5724 New Peachtree Rd Ste A-1, Chamblee
                   <br />
-                  Atlanta, GA 31126
+                  Atlanta, GA 30341
                 </p>
               </div>
             </div>
@@ -233,7 +233,7 @@ export default function ContactSection() {
                     defaultChecked
                   />
                   <span>
-                    I agree to be contacted by Kash Automotive Group LLC.
+                    I agree to be contacted by Z Motors.
                     <small>
                       {" "}
                       <Link href="/privacy">Privacy Policy</Link>

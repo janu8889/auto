@@ -15,9 +15,9 @@ function ContactInfo({MailIcon, LocationIcon, ClockIcon}) {
           <h4>Visit Us</h4>
 
           <p>
-            3595 Buckhead Loop NE
+            5724 New Peachtree Rd Ste A-1, Chamblee
             <br />
-            Atlanta, GA 31126
+            Atlanta, GA 30341
           </p>
         </div>
       </div>

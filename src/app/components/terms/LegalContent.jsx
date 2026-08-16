@@ -39,10 +39,10 @@ function LegalContent({ legalSections }) {
 
             <div className="contact-info">
               <p>
-                <strong>Kash Automotive Group LLC</strong>
+                <strong>Z Motors</strong>
               </p>
 
-              <p>3595 Buckhead Loop NE, Atlanta, GA 31126</p>
+              <p>5724 New Peachtree Rd Ste A-1, Chamblee, Atlanta, GA 30341</p>
 
               <p>
                 Phone:{" "}

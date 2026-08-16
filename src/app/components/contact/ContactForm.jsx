@@ -137,7 +137,7 @@ function ContactForm({ subjectOptions }) {
           <label>
             <input type="checkbox" required defaultChecked />
             <span>
-              I agree to be contacted by Kash Automotive Group LLC.
+              I agree to be contacted by Z Motors.
               <small>
                 <Link href="/privacy">Privacy Policy</Link>
               </small>

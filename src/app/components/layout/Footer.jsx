@@ -141,9 +141,9 @@ export default function Footer() {
               <LocationIcon />
 
               <span>
-                3595 Buckhead Loop NE
+                5724 New Peachtree Rd Ste A-1, Chamblee
                 <br />
-                Atlanta, GA 31126
+                Atlanta, GA 30341
               </span>
             </div>
 
@@ -177,7 +177,7 @@ export default function Footer() {
           </div>
 
           <p className="footer-copyright">
-            © 2026 Kash Automotive Group LLC.
+            © 2026 Z Motors.
             All rights reserved.
           </p>
         </div>

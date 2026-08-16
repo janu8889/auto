@@ -27,7 +27,7 @@ export default function BeginningSection() {
           </p>
 
           <p style={{ color: "var(--color-text-secondary)", lineHeight: 1.9, marginBottom: "1.25rem" }}>
-            Founded in 2019, Kash Automotive Group LLC emerged from a deep-rooted passion for automotive excellence. What began as a
+            Founded in 2014, Z Motors emerged from a deep-rooted passion for automotive excellence. What began as a
             personal vision quickly evolved into a trusted destination for drivers across the nation.
           </p>
 
