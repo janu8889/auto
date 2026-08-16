@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*", // toți roboții sunt permisi
       allow: "/",     // permit accesul la toate paginile
     },
-    sitemap: "https://kashautomotive.com/sitemap.xml", // link către sitemap-ul tău
+    sitemap: "https://zmotorscars.com/sitemap.xml", // link către sitemap-ul tău
   };
 }
