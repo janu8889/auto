@@ -9,17 +9,17 @@ export default async function sitemap() {
   const products = await Auto.find({}, { _id: 1, updatedAt: 1 }).lean();
 
   const staticPages = [
-    { url: "https://www.zmotorscars.com", lastModified: new Date() },
-    { url: "https://www.zmotorscars.com/inventory", lastModified: new Date() },
-    { url: "https://www.zmotorscars.com/about", lastModified: new Date() },
-    { url: "https://www.zmotorscars.com/shipping", lastModified: new Date() },
-    { url: "https://www.zmotorscars.com/contact", lastModified: new Date() },
-    { url: "https://www.zmotorscars.com/terms", lastModified: new Date() },
-    { url: "https://www.zmotorscars.com/privacy", lastModified: new Date() },
+    { url: "https://www.vqmotorspro.com", lastModified: new Date() },
+    { url: "https://www.vqmotorspro.com/inventory", lastModified: new Date() },
+    { url: "https://www.vqmotorspro.com/about", lastModified: new Date() },
+    { url: "https://www.vqmotorspro.com/shipping", lastModified: new Date() },
+    { url: "https://www.vqmotorspro.com/contact", lastModified: new Date() },
+    { url: "https://www.vqmotorspro.com/terms", lastModified: new Date() },
+    { url: "https://www.vqmotorspro.com/privacy", lastModified: new Date() },
   ];
 
   const productPages = products.map((p) => ({
-    url: `https://www.zmotorscars.com/inventory/${p._id.toString()}`,
+    url: `https://www.vqmotorspro.com/inventory/${p._id.toString()}`,
     lastModified: p.updatedAt || new Date(),
   }));
 

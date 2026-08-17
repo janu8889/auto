@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: "*", // toți roboții sunt permisi
       allow: "/",     // permit accesul la toate paginile
     },
-    sitemap: "https://www.zmotorscars.com/sitemap.xml", // link către sitemap-ul tău
+    sitemap: "https://www.vqmotorspro.com/sitemap.xml", // link către sitemap-ul tău
   };
 }
