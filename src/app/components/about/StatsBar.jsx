@@ -1,5 +1,5 @@
 const stats = [
-  ["12+", "Years in Business"],
+  ["8+", "Years in Business"],
   ["300+", "Happy Customers"],
   ["50", "States Served"],
   ["100%", "Satisfaction Focus"],

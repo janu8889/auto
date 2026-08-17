@@ -15,9 +15,9 @@ function ContactInfo({MailIcon, LocationIcon, ClockIcon}) {
           <h4>Visit Us</h4>
 
           <p>
-            5724 New Peachtree Rd Ste A-1, Chamblee
+            102 Oglethorpe Professional Blvd,
             <br />
-            Atlanta, GA 30341
+            Savannah, GA 31406
           </p>
         </div>
       </div>

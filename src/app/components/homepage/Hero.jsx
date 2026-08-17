@@ -50,7 +50,7 @@ export default function Hero() {
         <p className="hero-description">
           Discover a curated selection of modern
           performance trucks and premium vehicles
-          in Atlanta, GA.
+          in Savannah, GA.
         </p>
 
         <div className="hero-buttons">

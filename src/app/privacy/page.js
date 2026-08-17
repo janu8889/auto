@@ -69,9 +69,9 @@ function LegalContent() {
             <p>If you have questions about this Privacy Policy or our privacy practices, please contact us:</p>
             <div className="contact-info">
               <p>
-                <strong>Z Motors</strong>
+                <strong>VQ Motors</strong>
               </p>
-              <p> 5724 New Peachtree Rd Ste A-1, Chamblee, Atlanta, GA 30341</p>
+              <p> 102 Oglethorpe Professional Blvd, Savannah, GA 31406</p>
               <p>
                 Phone: <a href="tel:4044295639">(404) 429-5639</a>
               </p>

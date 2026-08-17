@@ -16,9 +16,9 @@ function ContactSection({ LocationIcon, ClockIcon, PhoneIcon, ExternalIcon }) {
               <div className="contact-item-content">
                 <h4>Location</h4>
                 <p>
-                  5724 New Peachtree Rd Ste A-1, Chamblee
+                  102 Oglethorpe Professional Blvd,
                   <br />
-                  Atlanta, GA 30341
+                  Savannah, GA 31406
                 </p>
               </div>
             </div>
@@ -68,10 +68,10 @@ function ContactSection({ LocationIcon, ClockIcon, PhoneIcon, ExternalIcon }) {
                   strokeWidth: 1.5,
                 }}
               />
-              <p style={{ color: "var(--color-text-secondary)" }}> 5724 New Peachtree Rd Ste A-1, Chamblee </p>
+              <p style={{ color: "var(--color-text-secondary)" }}> 102 Oglethorpe Professional Blvd </p>
 
               <a
-                href="https://maps.app.goo.gl/6V2nfCpUjjJHRff78"
+                href="https://maps.app.goo.gl/BbMfSAbFm3pbrTpAA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn btn-outline"

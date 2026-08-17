@@ -5,26 +5,26 @@ import { Analytics } from "@vercel/analytics/next"
 import Script from "next/script";
 
 export const metadata = {
-  metadataBase: new URL("https://zmotorscars.com"),
+  metadataBase: new URL("https://vqmotorspro.com"),
 
   title: {
-    default: "Z Motors | Premium Vehicles",
-    template: "%s | Z Motors",
+    default: "VQ Motors | Premium Vehicles",
+    template: "%s | VQ Motors",
   },
 
   description:
-    "Discover a curated selection of premium vehicles at Z Motors in Atlanta, GA.",
+    "Discover a curated selection of premium vehicles at VQ Motors in Atlanta, GA.",
 
   alternates: {
     canonical: "/",
   },
 
   openGraph: {
-    title: "Z Motors | Premium Vehicles",
+    title: "VQ Motors | Premium Vehicles",
     description:
       "Premium cars, trucks, and SUVs in Atlanta, GA.",
-    url: "https://zmotorscars.com",
-    siteName: "Z Motors",
+    url: "https://vqmotorspro.com",
+    siteName: "VQ Motors",
     images: [
       {
         url: "/og-image.jpg",

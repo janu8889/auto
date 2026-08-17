@@ -121,9 +121,9 @@ export default function ContactSection() {
               <div className="contact-item-content">
                 <h4>Location</h4>
                 <p>
-                  5724 New Peachtree Rd Ste A-1, Chamblee
+                  102 Oglethorpe Professional Blvd, 
                   <br />
-                  Atlanta, GA 30341
+                  Savannah, GA 31406
                 </p>
               </div>
             </div>
@@ -233,7 +233,7 @@ export default function ContactSection() {
                     defaultChecked
                   />
                   <span>
-                    I agree to be contacted by Z Motors.
+                    I agree to be contacted by VQ Motors.
                     <small>
                       {" "}
                       <Link href="/privacy">Privacy Policy</Link>

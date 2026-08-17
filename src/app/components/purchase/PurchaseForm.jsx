@@ -194,7 +194,7 @@ export default function PurchaseForm({ id }) {
           <label>
             <input type="checkbox" name="consent" required value="on" />
             <span>
-              I confirm that the information provided is accurate and I authorize Z Motors to contact me regarding this purchase. I understand that submitting this form is a non-binding expression of interest and does not constitute a final purchase agreement. I agree to the <Link href="/terms">Terms of Service</Link> and <Link href="/privacy"> Privacy Policy</Link>. 
+              I confirm that the information provided is accurate and I authorize VQ Motors to contact me regarding this purchase. I understand that submitting this form is a non-binding expression of interest and does not constitute a final purchase agreement. I agree to the <Link href="/terms">Terms of Service</Link> and <Link href="/privacy"> Privacy Policy</Link>. 
             </span>
           </label>
         </div>

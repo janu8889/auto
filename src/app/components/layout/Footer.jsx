@@ -141,9 +141,9 @@ export default function Footer() {
               <LocationIcon />
 
               <span>
-                5724 New Peachtree Rd Ste A-1, Chamblee
+                102 Oglethorpe Professional Blvd
                 <br />
-                Atlanta, GA 30341
+                Savannah, GA 31406
               </span>
             </div>
 
@@ -177,7 +177,7 @@ export default function Footer() {
           </div>
 
           <p className="footer-copyright">
-            © 2026 Z Motors.
+            © 2026 VQ Motors.
             All rights reserved.
           </p>
         </div>
