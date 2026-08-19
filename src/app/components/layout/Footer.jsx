@@ -158,8 +158,8 @@ export default function Footer() {
             <div className="footer-contact-item">
               <MailIcon />
 
-              <a href="mailto:sales@kashautomotive.com">
-                sales@kashautomotive.com
+              <a href="mailto:sales@vqmotorspro.com">
+                sales@vqmotorspro.com
               </a>
             </div>
           </div>

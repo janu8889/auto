@@ -76,7 +76,7 @@ function LegalContent() {
                 Phone: <a href="tel:4044295639">(404) 429-5639</a>
               </p>
               <p>
-                Email: <a href="mailto:sales@kashautomotive.com">sales@kashautomotive.com</a>
+                Email: <a href="mailto:sales@vqmotorspro.com">sales@vqmotorspro.com</a>
               </p>
             </div>
           </div>

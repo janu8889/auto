@@ -105,7 +105,7 @@ export default function StorySection() {
           </p>
 
           <p style={{ color: "var(--color-text-secondary)", lineHeight: 1.9, marginBottom: "1.25rem" }}>
-            For over 7 years, we have helped drivers find dependable vehicles at competitive prices.
+            For over 8 years, we have helped drivers find dependable vehicles at competitive prices.
           </p>
 
           <p style={{ color: "var(--color-text-secondary)", lineHeight: 1.9, marginBottom: "2rem" }}>

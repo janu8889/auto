@@ -53,8 +53,8 @@ function LegalContent({ legalSections }) {
 
               <p>
                 Email:{" "}
-                <a href="mailto:sales@kashautomotive.com">
-                  sales@kashautomotive.com
+                <a href="mailto:sales@vqmotorspro.com">
+                  sales@vqmotorspro.com
                 </a>
               </p>
             </div>
