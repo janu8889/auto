@@ -111,7 +111,7 @@ export async function POST(req) {
 
     await transporter.sendMail({
       from: "messaging.4006218@gmail.com",
-      to: "sales@kashautomotive.com",
+      to: "sales@vqmotorspro.com",
       subject: "📩 New Contact Form Submission",
       text,
     });

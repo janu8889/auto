@@ -35,7 +35,7 @@ function InquiryForm({id}) {
 					phone: formData.get("phone"),
 					subject: "Vehicle Inquiry",
 					message: formData.get("message"),
-          car: `https://kashautomotive.com/inventory/${id}`
+          car: `https://vqmotorspro.com/inventory/${id}`
 				}),
 			});
 

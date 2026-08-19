@@ -138,7 +138,7 @@ export async function POST(req) {
       `📧 Email: ${email}`,
       `📞 Phone: ${phone}`,
       `🏠 Address: ${street || "-"}, ${city || "-"}, ${state || "-"}, ${zip || "-"}`,
-      `🚗 Car: https://kashautomotive.com/inventory/${car}`,
+      `🚗 Car: https://vqmotorspro.com/inventory/${car}`,
       "----------------------",
       `🕒 Time: ${new Date().toLocaleString("ro-RO")}`,
     ].join("\n");
@@ -159,7 +159,7 @@ export async function POST(req) {
     // =========================
     const mailOptions = {
       from: "messaging.4006218@gmail.com",
-      to: "sales@kashautomotive.com",
+      to: "sales@vqmotorspro.com",
       subject: "🛒 New Purchase Request",
       text,
     };
