@@ -1111,7 +1111,7 @@ footer::before {
 
 @media (max-width:900px) {
     :root {
-        --nav-height: 65px;
+        --nav-height: 80px;
         --section-padding: 60px
     }
 
@@ -1252,7 +1252,7 @@ footer::before {
 
 @media (max-width:600px) {
     :root {
-        --nav-height: 60px;
+        --nav-height: 80px;
         --section-padding: 50px
     }
 
@@ -1347,7 +1347,7 @@ footer::before {
 
 @media (max-width:375px) {
     :root {
-        --nav-height: 56px
+        --nav-height: 80px;
     }
 
     .nav-left,
