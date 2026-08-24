@@ -12,7 +12,8 @@ const confidencePoints = [
   {
     number: "03",
     title: "Commit with confidence",
-    description: "Not happy with your purchase? 3 day / 250 mile returns, no questions asked.",
+    sub: "Not happy with your purchase? ",
+    description: "3 day / 250 mile returns, no questions asked."
   },
 ];
 
@@ -31,6 +32,7 @@ export default function ConfidenceSection() {
             <article className="confidence-card" key={point.number}>
               <span className="confidence-number">{point.number}</span>
               <h3>{point.title}</h3>
+              <h5>{point.sub}</h5>
               <p>{point.description}</p>
             </article>
           ))}
