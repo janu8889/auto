@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 
 import Hero from "./components/homepage/Hero";
 import StatsBar from "./components/homepage/StatsBar";
+import ConfidenceSection from "./components/homepage/ConfidenceSection";
 import FeaturedVehicles from "./components/homepage/FeaturedVehicles";
 import StorySection from "./components/homepage/StorySection";
 import Testimonials from "./components/homepage/Testimonials";
@@ -51,6 +52,7 @@ export default function Home() {
       <main>
         <Hero />
         <StatsBar stats={stats} />
+        <ConfidenceSection />
 
         {loading ? (
           <p style={{ textAlign: "center", padding: "2rem" }}>
