@@ -823,6 +823,7 @@ section {
 }
 
 .confidence-card h3 {
+    text-align: center;
     margin-bottom: 0.75rem;
     color: var(--color-text);
     font-family: var(--font-heading);
@@ -831,7 +832,7 @@ section {
 }
 
 .confidence-card p {
-    max-width: 260px;
+        text-align: center;
     color: var(--color-text-secondary);
     line-height: 1.8;
 }

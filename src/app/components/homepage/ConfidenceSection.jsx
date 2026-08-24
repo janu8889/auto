@@ -7,7 +7,7 @@ const confidencePoints = [
   {
     number: "02",
     title: "Drive with confidence",
-    description: "Enjoy a 30 day / 1,000 mile limited warranty.",
+    description: "Enjoy a 60 day / 3,000 mile limited warranty.",
   },
   {
     number: "03",
