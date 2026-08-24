@@ -12,7 +12,7 @@ const confidencePoints = [
   {
     number: "03",
     title: "Commit with confidence",
-    description: "3 day / 250 mile returns, no questions asked.",
+    description: "Not happy with your purchase? 3 day / 250 mile returns, no questions asked.",
   },
 ];
 
