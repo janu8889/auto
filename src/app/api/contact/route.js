@@ -12,8 +12,7 @@
 //       );
 //     }
 
-//     const token = '7594221274:AAHhvlVReiGLUAbAhePSW6cq0CEW6_5i80s';
-//     const chatId = '-5263521263';
+
 
 //     if (!token || !chatId) {
 //       return NextResponse.json(
@@ -104,14 +103,14 @@ export async function POST(req) {
     const transporter = nodemailer.createTransport({
       service: "gmail",
       auth: {
-        user: "messaging.4006218@gmail.com",
-        pass: "zxkm fosn zsts hbji",
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
       },
     });
 
     await transporter.sendMail({
-      from: "messaging.4006218@gmail.com",
-      to: "sales@vqmotorspro.com",
+      from: process.env.EMAIL_USER,
+      to:  process.env.EMAIL_TO,
       subject: "📩 New Contact Form Submission",
       text,
     });
